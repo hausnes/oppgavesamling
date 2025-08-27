@@ -1,6 +1,17 @@
 # Oppgavesamling for JavaScript
 
-## Variabler
+## Variablar og navngjeving
+Kva er feil eller dårleg med variabelnavna under? Gje ein kort forklaring og gje dei betre variabelnavn.
+
+- let etTall = 123
+- let variabel3 = 3
+- let variabel1 = "teksten skal hit"
+- let detFørsteTallet = "1"
+- let prosentAvTallet = 15
+- let summenAvRegnestykketEr = 16
+
+## Variabler og utregning
+Les inn to tal fra brukeren. Summer disse, og skriv ut resultatet. Bruk gjerne prompt, men få til å lese fra et form også dersom du har vært borte i det før.
 
 ## Variablar og konvertering
 - Lag eit program som ber brukaren om å skrive inn eit binært tall (eksempelvis `1010`). Bruk gjerne prompt.
@@ -11,7 +22,7 @@
 
 Videre: Same som forrige, men no skriv brukaren inn eit hexadesimalt tall (eksempelvis «f»).
 
-## Variabler og enkle utreknignar
+## Variablar og enkle utreknignar
 La brukaren skrive inn to sjølvvalte (stads)namn og berekn deretter differansen i antall teikn. Forsøk gjerne å bruke tekstfelt og ein knapp som i skjermbiletet under. Eventuelt prompt for å gjere det enklare og tryggare. Pass i tillegg på at du unngår minusteikn i utskrifta dersom den første staden har færre antall teikn enn den andre (hint: absolutt verdi).
 
 ![Differanse i antall teikn](./bilder/differanse.png)
