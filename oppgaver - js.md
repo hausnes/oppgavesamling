@@ -1,13 +1,41 @@
 # Oppgavesamling for JavaScript
 
+## Variabler
+
+## Variablar og konvertering
+- Lag eit program som ber brukaren om å skrive inn eit binært tall (eksempelvis `1010`). Bruk gjerne prompt.
+- Konverter dette til eit heiltall (integer).
+- Skriv ut resultatet.
+
+(Hint: `parseInt`)
+
+Videre: Same som forrige, men no skriv brukaren inn eit hexadesimalt tall (eksempelvis «f»).
+
 ## Variabler og enkle utreknignar
 La brukaren skrive inn to sjølvvalte (stads)namn og berekn deretter differansen i antall teikn. Forsøk gjerne å bruke tekstfelt og ein knapp som i skjermbiletet under. Eventuelt prompt for å gjere det enklare og tryggare. Pass i tillegg på at du unngår minusteikn i utskrifta dersom den første staden har færre antall teikn enn den andre (hint: absolutt verdi).
 
-![Eksempel på skjermbilde](./bilder/differanse.png)
+![Differanse i antall teikn](./bilder/differanse.png)
 
 Bonusoppgåve: Handter brukarfeil, som til dømes manglande input.
 
 Nokre fleire krav du kan legge til?
+
+## Variablar og valgsetning (if)
+Spør brukaren eit spørsmål. Dersom eit visst ord er inne i setningen så skriv du eit bekreftande svar, som «å, eg og likar …».
+
+(Hint: indexOf eller includes. Bruk gjerne begge.)
+
+## Eigenskapar om nettlesaren
+Lag fylgjande oppsummering på nettsida di. NB: Dynamisk. Det vil sei at tala for til dømes bredde, høgde og nettlesarversjon skal endre seg basert på enheten du sit på. Dette kan gjerast på meir eller mindre effektive måtar. Vurder ulike alternativ. 
+
+![Nettlesareigenskapar](./bilder/nettlesareigenskapar.png)
+
+Legg til fleire eigenskapar du kan hente ut om du ynskjer. Liste over anbefalte ting å kjenne til:
+-	Operativsystem (typisk Windows, MacOS, ChromeOS, ulike Linux-variantar el.l.)
+-	Nettlesar, versjon, «produsent»
+-	Størrelse på skjerm (høgde, bredde)
+-	Lokasjon
+-	… kva meir kan du finne ut?
 
 ## Valgsetningar: Aldersgrense
 Lag ei aldersgrense på nettsida di. Spør brukaren kor gamal h*n er. Dersom over 18 kan du vise eit kattebilete pluss litt tekst, dersom ikkje skal du gje beskjed om at innhaldet dessverre er sperra (el.l.).
