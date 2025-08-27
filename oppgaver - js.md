@@ -11,7 +11,18 @@ Kva er feil eller dårleg med variabelnavna under? Gje ein kort forklaring og gj
 - let summenAvRegnestykketEr = 16
 
 ## Variabler og utregning
-Les inn to tal fra brukeren. Summer disse, og skriv ut resultatet. Bruk gjerne prompt, men få til å lese fra et form også dersom du har vært borte i det før.
+Les inn to tall fra brukeren. Summer disse, og skriv ut resultatet. Bruk gjerne prompt, men få til å lese fra en form også dersom du har vært borte i det før.
+
+<details>
+    <summary>Tips</summary>
+    <code>
+        let tall1 = parseInt(prompt("Skriv inn tall nr. 1: ));
+    </code>
+    <br>eller<br>
+    <code>
+        let tall1 = parseInt(document.getElemenById("input").value);
+    </code>
+</details>
 
 ## Variablar og konvertering
 - Lag eit program som ber brukaren om å skrive inn eit binært tall (eksempelvis `1010`). Bruk gjerne prompt.
