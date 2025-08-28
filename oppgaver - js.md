@@ -4,11 +4,20 @@
 Kva er feil eller dårleg med variabelnavna under? Gje ein kort forklaring og gje dei betre variabelnavn.
 
 - let etTall = 123
-- let variabel3 = 3
+- let variabel3 = [3, 3, 3]
 - let variabel1 = "teksten skal hit"
 - let detFørsteTallet = "1"
 - let prosentAvTallet = 15
 - let summenAvRegnestykketEr = 16
+- let 2tall = 5
+- let for = 10
+- let mitt-tall = 7
+
+Her er nokre gode eksempel, forklar gjerne kvifor dei er gode:
+- let antallElevar = 23
+- let elevNavn = "Ola"
+- let prosentFullført = 85
+- let sum = 42
 
 ## Variabler og utregning
 Les inn to tall fra brukeren. Summer disse, og skriv ut resultatet. Bruk gjerne prompt, men få til å lese fra en form også dersom du har vært borte i det før.
