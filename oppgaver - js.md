@@ -56,6 +56,8 @@ Spør brukaren eit spørsmål. Dersom eit visst ord er inne i setningen så skri
 
 (Hint: indexOf eller includes. Bruk gjerne begge.)
 
+[Løysingsforslag](https://github.com/hausnes/oppgavesamling/tree/main/l%C3%B8sningsforslag/includes)
+
 ## Eigenskapar om nettlesaren
 Lag fylgjande oppsummering på nettsida di. NB: Dynamisk. Det vil sei at tala for til dømes bredde, høgde og nettlesarversjon skal endre seg basert på enheten du sit på. Dette kan gjerast på meir eller mindre effektive måtar. Vurder ulike alternativ. 
 
