@@ -1,5 +1,18 @@
 # Oppgavesamling for JavaScript
 
+## Sjekkliste for viktige ting du skal kunne
+- [ ] Definere variabler, og bruke disse (`let` og `const`)
+- [ ] Kunne konvertere fra en datatype til en annen, blant annet vha. `parseInt()`.
+- [ ] Skrive ut til "konsollen", og kjenne til ulike måter å gjøre dette på, som `console.log()`, `console.table()`, `console.error()`, `console.warning()` m.m.
+- [ ] Skrive ut til HTML, og kjenne til når du skal bruke `.innerHTML` og `.innerText`.
+- [ ] Samle kode i funksjoner, og kunne kalle på disse etter behov. Du skal kunne bruke disse både med og uten parameter. Du bør også kjenne til navngitte funksjoner, anonyme funksjoner og [`arrow functions`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
+- [ ] Legge til lyttefunksjoner på for eksempel en knapp, og skrive en funksjon som får noe til å skje. `knapp.addEventListener("click", funksjonsnavn)`.
+- [ ] Lese fra HTML vha. et form (skjema). Huske å bruke `.addEventListener("submit", ...)`, og ikke som `"click"` på knappen i formen.
+- [ ] Opprette HTML-elementer og legge de til i DOM-en vha. JavaScript. Her skal du blant annet kunne bruke `createElement()` og `addChild()`.
+- [ ] ...
+
+Oppgavene du jobber med i denne oppgavesamlingen vil blant annet lære deg noe om punktene over. Etter at du har jobbet med oppgavene en stund, kan du gå tilbake for å se om du har oppfylt noen av disse.
+
 ## Variablar og navngjeving
 Kva er feil eller dårleg med variabelnavna under? Gje ein kort forklaring og gje dei betre variabelnavn.
 
@@ -40,7 +53,7 @@ Les inn to tall fra brukeren. Summer disse, og skriv ut resultatet. Bruk gjerne 
 
 (Hint: `parseInt`)
 
-Videre: Same som forrige, men no skriv brukaren inn eit hexadesimalt tall (eksempelvis «f»).
+Vidare: Same som forrige, men no skriv brukaren inn eit hexadesimalt tall (eksempelvis «f»).
 
 ## Variablar og enkle utreknignar
 La brukaren skrive inn to sjølvvalte (stads)namn og berekn deretter differansen i antall teikn. Forsøk gjerne å bruke tekstfelt og ein knapp som i skjermbiletet under. Eventuelt prompt for å gjere det enklare og tryggare. Pass i tillegg på at du unngår minusteikn i utskrifta dersom den første staden har færre antall teikn enn den andre (hint: absolutt verdi).
