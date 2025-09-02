@@ -1,6 +1,6 @@
 # Oppgavesamling for JavaScript
 
-## Sjekkliste for viktige ting du skal kunne
+## 1. Sjekkliste for viktige ting du skal kunne
 - [ ] Definere variabler, og bruke disse (`let` og `const`)
 - [ ] Kunne konvertere fra en datatype til en annen, blant annet vha. `parseInt()`.
 - [ ] Skrive ut til "konsollen", og kjenne til ulike måter å gjøre dette på, som `console.log()`, `console.table()`, `console.error()`, `console.warning()` m.m.
@@ -13,7 +13,7 @@
 
 Oppgavene du jobber med i denne oppgavesamlingen vil blant annet lære deg noe om punktene over. Etter at du har jobbet med oppgavene en stund, kan du gå tilbake for å se om du har oppfylt noen av disse.
 
-## Variablar og navngjeving
+## 2. Variablar og navngjeving
 Kva er feil eller dårleg med variabelnavna under? Gje ein kort forklaring og gje dei betre variabelnavn.
 
 - let etTall = 123
@@ -32,10 +32,10 @@ Her er nokre gode eksempel, forklar gjerne kvifor dei er gode:
 - let prosentFullført = 85
 - let sum = 42
 
-## Variablar og bruken av disse
+## 3. Variablar og bruken av disse
 Skriv eit program som skriver "5 ganger 10 er 50" til konsoll ved å bruke variablar for tala 5, 10 og 50.
 
-## Variabler, epostadresser
+## 4. Variabler, epostadresser
 Skriv et program som bruker variablene under (erstatt variabelnavnene med mer passende navn) til å skrive forslag til e-post adresser til konsoll. Be gjerne om input fra brukeren.
 - let en = fornavn
 - let to = etternavn
@@ -47,7 +47,7 @@ Kriterier:
 - Variabelen som inneholder "domene" skal ikke inneholde "@".
 - Epostadressen skal lagres i en egen variabel, og denne nye variabelen skal printes ut
 
-## Variabler, 
+## 5. Variabler, 
 - Hvorfor blir ikke regnestykket under regnet ut når console.log-setningen kjøres?
 `console.log("4 + 6");`
 - Hvorfor blir to forskjellige tall printet når koden under kjøres?
@@ -66,7 +66,7 @@ Kriterier:
     poeng += 1;
     ```
 
-## Variabler, 
+## 6. Variabler, 
 - Hva er feil med koden i "Kodebit 1" under? Rett den opp så den kjører.
     ```
     let gate = 'Kongens gate'
@@ -79,7 +79,7 @@ Kriterier:
 - Skriv adressen ut på følgende to måter ved å bruke variabler: `Adressen er Kongens gate 432b` og `Gaten er Kongens Gate, husnummeret er 432, oppgang b`.
 
 
-## Variabler og utregning
+## 7. Variabler og utregning
 Les inn to tall fra brukeren. Summer disse, og skriv ut resultatet. Bruk gjerne prompt, men få til å lese fra en form også dersom du har vært borte i det før.
 
 <details>
@@ -93,7 +93,7 @@ Les inn to tall fra brukeren. Summer disse, og skriv ut resultatet. Bruk gjerne 
     </code>
 </details>
 
-## Variablar og konvertering
+## 8. Variablar og konvertering
 - Lag eit program som ber brukaren om å skrive inn eit binært tall (eksempelvis `1010`). Bruk gjerne prompt.
 - Konverter dette til eit heiltall (integer).
 - Skriv ut resultatet.
@@ -102,7 +102,7 @@ Les inn to tall fra brukeren. Summer disse, og skriv ut resultatet. Bruk gjerne 
 
 Vidare: Same som forrige, men no skriv brukaren inn eit hexadesimalt tall (eksempelvis «f»).
 
-## ⭐ Variablar og enkle utreknignar
+## 9. ⭐ Variablar og enkle utreknignar
 La brukaren skrive inn to sjølvvalte (stads)namn og berekn deretter differansen i antall teikn. Forsøk gjerne å bruke tekstfelt og ein knapp som i skjermbiletet under. Eventuelt prompt for å gjere det enklare og tryggare. Pass i tillegg på at du unngår minusteikn i utskrifta dersom den første staden har færre antall teikn enn den andre (hint: absolutt verdi).
 
 ![Differanse i antall teikn](./bilder/differanse.png)
@@ -111,14 +111,14 @@ Bonusoppgåve: Handter brukarfeil, som til dømes manglande input.
 
 Nokre fleire krav du kan legge til?
 
-## Variablar og valgsetning (if)
+## 10. Variablar og valgsetning (if)
 Spør brukaren eit spørsmål. Dersom eit visst ord er inne i setningen så skriv du eit bekreftande svar, som «å, eg og likar …».
 
 (Hint: indexOf eller includes. Bruk gjerne begge.)
 
 [Løysingsforslag](https://github.com/hausnes/oppgavesamling/tree/main/l%C3%B8sningsforslag/includes)
 
-## Eigenskapar om nettlesaren
+## 11. Eigenskapar om nettlesaren
 Lag fylgjande oppsummering på nettsida di. NB: Dynamisk. Det vil sei at tala for til dømes bredde, høgde og nettlesarversjon skal endre seg basert på enheten du sit på. Dette kan gjerast på meir eller mindre effektive måtar. Vurder ulike alternativ. 
 
 ![Nettlesareigenskapar](./bilder/nettlesareigenskapar.png)
@@ -130,12 +130,12 @@ Legg til fleire eigenskapar du kan hente ut om du ynskjer. Liste over anbefalte 
 -	Lokasjon
 -	… kva meir kan du finne ut?
 
-## Valgsetningar: Aldersgrense
+## 12. Valgsetningar: Aldersgrense
 Lag ei aldersgrense på nettsida di. Spør brukaren kor gamal h*n er. Dersom over 18 kan du vise eit kattebilete pluss litt tekst, dersom ikkje skal du gje beskjed om at innhaldet dessverre er sperra (el.l.).
 
 Hint: `img src=""` er lovleg å bruke. Då vises ikkje eit bilete i heile tatt.
 
-## ⭐ Valgsetningar: Førarkort
+## 13. ⭐ Valgsetningar: Førarkort
 Lag ein enkel app som kan hjelpe folk med å få vite kva setifikat dei kan ta. Du ber om alderen og presenterer deretter bileter og tekst som fortel kva dei kan ta sertifikat på (meir avansert om du vil: [Lovdata](https://lovdata.no/forskrift/2004-01-19-298/§3-1)):
 - Yngre enn 16. Ingenting, brukaren er for ung.
 - 16 år: moped
@@ -145,7 +145,7 @@ Lag ein enkel app som kan hjelpe folk med å få vite kva setifikat dei kan ta. 
 
 Kan du legge inn ei øvre aldersgrense òg? Kanskje som ein beskjed om at du må gjennomføre faste kontrollar dersom du er over eit visst antall år?
 
-## ⭐ Gjettespel
+## 14. ⭐ Gjettespel
 Før du begynner på oppgåva: Finn ut korleis du kan generere tilfeldige tal. Hint `Math.random()` hjå `MDN`. Her finn du meir generelle og brukandes hjelp enn det som står i boka.
 
 Versjon 1: Grunnleggande
@@ -158,12 +158,12 @@ Versjon 2: Avansert
 - Tell kor mange gonger brukaren har gjetta, eller sett ein begrensing på dette.
 - Legg til fleire krav om du vil.
 
-## Halloween, skrøymande god app (timing)
+## 15. Halloween, skrøymande god app (timing)
 Lag ei nettside som har som mål å skrøyme brukaren. Eksempelvis kan du laste inn ei nettside med behagelege fargar, musikk og generelt god stemning. Etter ei tilfeldig tid så kjem det ein høg lyd og eit skrøymande bilete (eller ein video) – samt andre endringar du ser kan vere spanande.
 
 Hint: Timing-funksjonar i JS. `setTimeout` og/eller `setInterval`.
 
-## ⭐ Løkker og arrays: Tilfeldige tal
+## 16. ⭐ Løkker og arrays: Tilfeldige tal
 Lag ein array. Bruk ei løkke for å fylle denne med 200 tilfeldige heiltal mellom 1 og 100. Sjå gjerne MDN (Mozilla Developer Network) for hjelp til Math.random. Bruk færre tal og mindre variasjon (1-10, til dømes), dersom du har behov for at du kan telle over og sjekke manuelt sjølv.
 
 Bruk løkker og variablar for å finne ut fylgjande (ikkje innebygde funksjonar i JS):
@@ -175,11 +175,11 @@ Bruk løkker og variablar for å finne ut fylgjande (ikkje innebygde funksjonar 
 -	Finn det lågaste talet.
 -	…
 
-## ⭐ Arrays og funksjonar: Biletgalleri
+## 17. ⭐ Arrays og funksjonar: Biletgalleri
 Lag eit enkelt biletgalleri vha. array. Meir konkret: Lagre bileta (navnet) i ein array og gjer det mogleg å bytte bilete ved å trykke på ein “neste-knapp”.
 Her er det heilt sikkert fristande å finne ein ferdigløysning på nett el.l. Eg anbefalar å lage ein særs enkel versjon basert på det me har lært så langt, for å forstå prinsippa skikkeleg.
 
-## Terningspel
+## 18. Terningspel
 Ta utgangspunkt i 2 terningar, eller fleire. Når sida lastast på nytt, eller når ein trykker på ein knapp, skal terningane få kvar sin verdi mellom 1-6. Skriv ut kva desse er. Deretter kan du til dømes sjekke om alle er like, om dei totalt overstig ein viss sum osv. Gje deg sjølv nokre utfordringar her (også med å vise fram bileter, om du vil). 
 
 ### V1: Enkel versjon:
@@ -193,7 +193,7 @@ Ta utgangspunkt i 2 terningar, eller fleire. Når sida lastast på nytt, eller n
 ### v3: Vidare arbeid 
 Bruker løkker og arrays for å generere så mange terningkast som brukaren ynskjer.
 
-## Hjelp kyllingen
+## 19. Hjelp kyllingen
 
 Du skal lage deler av ein app for ungar. Nødvendige bileter skal du laste ned sjølv. Appen (nettsida) opnar med at eit bilete av eit egg vises fram, med forklarande tekst til brukaren. 
  
@@ -214,7 +214,7 @@ Funksjonalitet vidare, når brukaren trykker på egget:
 
 Presenter innhaldet på en oversiktelig og god måte. Bileta skal vere tilpassa på ein fornuftig måte, med tanke på til dømes format, størrelse og oppløysning.
 
-## Gjettespel, extended edition
+## 20. Gjettespel, extended edition
 
 ![gjettespel-steg1](./bilder/gjettespel_v1.png)
 ![gjettespel-steg2](./bilder/gjettespel_v2.png)
@@ -236,7 +236,7 @@ Kravspesifikasjon, programmering og design:
     - Etter at ein har gjetta må ein trykke på ein knapp for å starte på nytt. Denne knappen skal ikkje vere synleg før ein har gjennomført ein “gjetting”.
     - Det skal ikkje vere mogleg å gjette fleire gonger enn ein, der brukaren skal få tilbakemelding og bli “blokkert” dersom ein forsøker fleire gonger.
 
-## “Chatbot”
+## 21. “Chatbot”
 Me forsøker å få det til å sjå ut som om brukaren av programmet har ein samtale med datamaskina. 
 
 Tips:
@@ -247,7 +247,7 @@ Tips:
 
 Avansert: Forsøk å unngå problem med dette at brukaren gjerne kan skrive “jeg liker i hvert fall ikke ski”, og at det blir tolka som at ski er ei interesse.
 
-## Tilfeldige fargar
+## 22. Tilfeldige fargar
 Lag funksjonar som returnerer ein tilfeldig fargeverdi. Dette kan du til dømes bestemme at skal vere type:
 - red, blue, green, pink osv. (altså `string`)
 - RGB-referansar
@@ -262,7 +262,7 @@ Bruk den tilfeldige fargen for gjere ein endring på bakgrunnsfargen til body (a
 
 Lag gjerne animasjon av overgangen mellom ein del ulike fargar òg, om du har lyst å gå vidare i pensum.
 
-## OLED-assistent
+## 23. OLED-assistent
 OLED-skjermar slit med at dei ikkje kan ha eit statisk bilete over lengre tid, då dei kan oppleve «innbrenning» (meir eller mindre permanente pikslar). Du kan til dømes sjå TV2-logoen innbrent oppe i høgre hjørne dersom du ser mykje på den kanalen.
 
 Lag ein app som testar for denne innbrenninga. Funksjonalitet:
@@ -274,7 +274,7 @@ Avansert: Lag til eit valg for innstillingar, der brukaren kan bestemme kor ofte
 
 Finn gjerne på eigne vriar på denne oppgåva.
 
-## ⭐ Forms (AKA skjema) og objekt
+## 24. ⭐ Forms (AKA skjema) og objekt
 Du skal lagre informasjon om deltakarar på eit arrangement. Du skal benytte eit form/skjema. Pass på at du benyttar gode input-typar i HTML (text, number, email osv.). Benytt required, placeholder, min, max osv.
 -	Fornavn
 -	Etternavn
@@ -291,7 +291,7 @@ Konkretisering og tips:
 - Skriv ein oppsummering av alt som kom frå input. Eksempelvis «Jo Bjørnar Hausnes, Øvre Kråk… er 89 år gamal og …».
 - Lagre all informasjonen i eit objekt.
 
-## ⭐ Matbutikk: createElement og appendChild
+## 25. ⭐ Matbutikk: createElement og appendChild
 En ny matbutikk på nett, «Rett hjem», ønsker din hjelp til å lage en bestillingsapplikasjon.
 
 Hovedfokus: Applikasjonen skal vise fram tilgjengelige produkter med et lite bilde, et navn og en pris. Gå gjennom array med objekt og generer HTML dynamisk vha. createElement og appendChild.
@@ -303,14 +303,14 @@ Du bør og vurdere å bruke en lignende måte å lagre handlekurven på.
 
 Tenk gjennom og begrunn hvorfor dette er en god måte å jobbe på.
 
-## ⭐ async function og await
+## 26. ⭐ async function og await
 Be om data (typisk 1 stk brukar til å byrje med) frå [randomuser.me](https://randomuser.me/documentation). Hugs at dette kan ta litt tid, så her må du bruke async function og await. Data kjem i JSON-format. Konverter etter behov.
 
 - Steg 1: Skriv ut ein del av informasjonen i `console`, til dømes namn, land og eit bilete. Kontroller at alt fungerer så langt.
 - Steg 2: Benytt `createElement` og `appendChild`, slik du gjorde i oppgåva om matbutikken, for å teikne opp dei tilfeldige brukarane på nettsida.
 
 
-## Kryptering
+## 27. Kryptering
 NB: Denne oppgåva kan løysast på fleire ulike måtar, og på meir eller mindre avanserte måtar. Begynn med ein tilnærming som gjer meining for din del. Ikkje forsøk å løys alt på ein gong, få ein og ein enkelt del til å fungere for seg først.
 
 Lag ei nettside som lar deg enkelt leike med å kunne både kryptere og dekryptere meldingar (i tekstform). Me bruker Caesar-kryptering for å oppnå dette, der du kort fortalt ved å kryptere gjer ein forskyvning i alfabetet, der til dømes ein `a` blir `b` dersom du har ein forskyvning (nøkkel) satt til 1. Du kan sjølvsagt legge til andre krypteringsmåtar (algoritmar) dersom du vil.
@@ -321,7 +321,7 @@ Bruk tid på å planlegge løysinga! Gjerne saman med nokon andre. Går det an �
 
 (Fleire detaljar om krypteringa blir gjennomgått i timane, samt “oppstartshjelp”.)
 
-## Array-repetisjon, “skryteApp”
+## 28. Array-repetisjon, “skryteApp”
 Det er dårleg stemining i klasserommet. Elevar snakkar stygt til kvarandre. Løysinga blir derfor å lage eit program som gjer som resultat noko som dette:
 
 ![skryt](./bilder/skryt.png)
@@ -361,12 +361,12 @@ let skryteOrd = [
 ### Alternativ oppgåvetekst: 
 Lag ein “troll”-generator. Altså, spy ut spam i ulike diskusjonsforum/kommentarfelt med tilfeldige, provoserande utsagn. NB: Ikkje strekk det for langt, slik at du faktisk gjer dette i praksis.
 
-## Array-repetisjon, “sensureringsApp”
+## 29. Array-repetisjon, “sensureringsApp”
 Ta inn ein setning og sensurer bort ord som ligg i ei liste (array) med problematiske ord. Byt ut med noko anna.
 
 Hint: Hugs tidlegare oppgåve på prøve der du luka ut upassande ord.
 
-## Array med objekt: Brukerliste ("Date")
+## 30. Array med objekt: Brukerliste ("Date")
 Opprett ein array med minst 3 ulike objekt, der kvar av desse skal innehalde fylgjande informasjon:
 - Navn
 - Fødselsår
@@ -375,7 +375,7 @@ Lag ein funksjon eller løkke som går gjennom alle elementa og bestemmer alder 
 
 Hint: Bruk «Date»-objektet. `let tid = new Date();` Slå opp kva du kan hente ut ved å skrive tid.xxx
 
-## Filmer i array med objekt
+## 31. Filmer i array med objekt
 1.	Lag en nettside for å registrere filmer med følgende informasjon:
     - Tittel
     - Regissør
@@ -385,7 +385,7 @@ Hint: Bruk «Date»-objektet. `let tid = new Date();` Slå opp kva du kan hente 
 4.	Skriv ut alle filmene. Bruk en løkke for å gå gjennom arrayen og skrive filmenes tittel og regissør til nettsiden.
 5.	Sorter objektene i arrayen etter filmtittel. Skriv ut den sorterte arrayen til nettsiden for å sjekke at de er sortert riktig.
 
-## Påskerenn
+## 32. Påskerenn
 Du skal lage eit program som skal brukast under det årlege påskerennet på stølsområdet Olastøl i Hardanger. Her samlast gode hyttenaboar for å gjennomføre konkurransar i 3 stk. ulike aktivitetar. 
 
 Prestisje, knekte lårhalsar og forholdsvis godt humør er viktige stikkord.
@@ -419,7 +419,7 @@ Det skal vere mogleg å vise ein oppsummering av resultata frå konkurransen. Ty
 
 Når det gjeld dei tre første plassane skal det visast fram pokalar (eller annan unik grafikk, type bilete/ikon eller liknande) foran desse. Resten av plasseringane bør det stå nummer foran.
 
-## Munnleg-praktisk eksempel, hopprenn
+## 33. Munnleg-praktisk eksempel, hopprenn
 Du skal lage eit program som reknar ut poengsummar under eit hopprenn. For å gjere det litt enklare ser me for oss at alle operasjonar blir gjort på same skjerm, det vil sei at både inntasting av alle nødvendige verdiar og resultatet kjem same plass.
 
 Hoppreglane er som følger:
@@ -431,7 +431,7 @@ Eksempelvis vil du dersom du hoppar 123 meter i ein bakke med K-punkt på 120 me
 - Stilpoeng reknast ut slik at 5 ulike dommerar gjer sine karakterar mellom 0 og 20, med intervall på 0.5. Det vil sei at ein til dømes kan gje 14.5 og 18, men ikkje 14.23 osv. Når alle har gjort dette skal høgaste og lågaste karakter strykast. Det er altså berre dei 3 karakterane ”i midten” som er med i endeleg poengsum.
 - Total poengsum reknast ut ved at du tek lengdepoenga og legg saman med stilpoenga.
 
-## API-kall, createElement og appendChild
+## 34. API-kall, createElement og appendChild
 
 ### Del 1:
 Bruk [randomuser.me](https://randomuser.me/) for å hente ein tilfeldig “person” og opprett deretter ei overskrift med navn, ei lenke/paragraf med e-posten og eit bilete. Bruk createElement og appendChild for å lage HTML-en.
