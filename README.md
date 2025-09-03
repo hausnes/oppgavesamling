@@ -8,8 +8,12 @@ Se oppgaver (og noen løsningsforslag til disse) for:
 - [NodeJS](oppgaver%20-%20nodejs.md)
 - [SQL](oppgaver%20-%20sql.md)
 
-Innholdet her blir brukt på Amalie Skram VGS, i fag som konseptutvikling og programmering, utvikling og informasjonsteknologi.
-
-Lyst til å bidra? Send gjerne inn en pull request og 4!
+Design og prototyping av nettsider (og mer):
+- [Figma 101](https://designlab.com/figma-101-course/introduction-to-figma)
 
 Lyst til å teste deg utover oppgavesamlingen her? Lyst på flere lignende oppgaver, men du kommer ikke på noe selv? Forsøk gjerne chatboten [Eksaminator i HTML, CSS og JS](https://ki.sikt.no/VN7M) som ligger hos Sikt KI, og krever innlogging via Feide.
+
+## Om ressursene og eventuelle bidrag
+Innholdet her blir brukt på Amalie Skram VGS, i fag som konseptutvikling og programmering, utvikling og informasjonsteknologi.
+
+Lyst til å bidra? `Send gjerne inn en pull request og 4!` Det er alltid kjekt med flere oppgaver, alternative løsningsforslag, nyttige ressurser m.m.
