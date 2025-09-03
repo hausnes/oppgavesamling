@@ -1,8 +1,15 @@
 # Oppgavesamling for SQL og datamodellering
+Mange av oppgåvene her let deg øve deg på å skrive spørringar opp mot ein allerede eksisterande database. 
+
+Du kan skrive spørringane på fleire måtar:
+- Installer [SQLite Studio](https://sqlitestudio.pl/), og opne eit (eller fleire) SQL-vindu.
+- Skriv spørringar direkte i Visual Studio Code.
+- ...
 
 ## SQL - spørringar
-Installer SQLite studio (SQLiteStudio), og øv på å skrive spørringar (SQL).
-Last ned databasefila «world» (lenke: https://dev.mysql.com/doc/index-other.html). Opne denne i SQLite studio.
+Last ned databasefila «world» (lenke: https://dev.mysql.com/doc/index-other.html). Direktelenke: [world.zip](https://downloads.mysql.com/docs/world-db.zip).
+
+Bli kjent med strukturen for databasen.
 
 1.	List opp alle land 
 2.	Finn hovedstaden til et spesifikt land
