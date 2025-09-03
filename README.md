@@ -1,6 +1,6 @@
 # Ressurser for HTML, CSS og JS
 
-Dette er et forsøk på å samle oppgaver, løsningsforslag og eksempler for deg som forsøker å lære deg HTML, CSS og JS.
+Dette er et forsøk på å samle oppgaver, løsningsforslag og eksempler for deg som forsøker å lære deg HTML, CSS og JS. Det er i tillegg en del materiale for Node JS, SQL mm. Stadige endringer på gang.
 
 Se oppgaver (og noen løsningsforslag til disse) for:
 - [HTML og CSS](oppgaver%20-%20html%20og%20css.md)
