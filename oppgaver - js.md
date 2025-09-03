@@ -118,6 +118,8 @@ Bonusoppgåve: Handter brukarfeil, som til dømes manglande input.
 
 Nokre fleire krav du kan legge til?
 
+[Løysingsforslag](./løsningsforslag/stadsnamn/)
+
 ## 10. Variablar og valgsetning (if)
 Spør brukaren eit spørsmål. Dersom eit visst ord er inne i setningen så skriv du eit bekreftande svar, som «å, eg og likar …».
 
@@ -157,6 +159,8 @@ Lag ein enkel app som kan hjelpe folk med å få vite kva setifikat dei kan ta. 
 Kan du legge inn ei øvre aldersgrense òg? Kanskje som ein beskjed om at du må gjennomføre faste kontrollar dersom du er over eit visst antall år?
 
 Det er anbefalt å teikne eit flytskjema for denne oppgåva.
+
+[Løysingsforslag](./eksempel/ifelse/)
 
 ## 14. ⭐ Gjettespel
 Før du begynner på oppgåva: Finn ut korleis du kan generere tilfeldige tal. Hint `Math.random()` hjå `MDN`. Her finn du meir generelle og brukandes hjelp enn det som står i boka.
