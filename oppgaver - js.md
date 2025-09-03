@@ -1,5 +1,7 @@
 # Oppgavesamling for JavaScript
 
+[Tilbake til samleside](README.md)
+
 ## 1. Sjekkliste for viktige ting du skal kunne
 - [ ] Definere variabler, og bruke disse (`let` og `const`)
 - [ ] Kunne konvertere fra en datatype til en annen, blant annet vha. `parseInt()`.
@@ -16,42 +18,49 @@ Oppgavene du jobber med i denne oppgavesamlingen vil blant annet lære deg noe o
 ## 2. Variablar og navngjeving
 Kva er feil eller dårleg med variabelnavna under? Gje ein kort forklaring og gje dei betre variabelnavn.
 
-- let etTall = 123
-- let variabel3 = [3, 3, 3]
-- let variabel1 = "teksten skal hit"
-- let detFørsteTallet = "1"
-- let prosentAvTallet = 15
-- let summenAvRegnestykketEr = 16
-- let 2tall = 5
-- let for = 10
-- let mitt-tall = 7
+```js
+let etTall = 123
+let variabel3 = [3, 3, 3]
+let variabel1 = "teksten skal hit"
+let detFørsteTallet = "1"
+let prosentAvTallet = 15
+let summenAvRegnestykketEr = 16
+let 2tall = 5
+let for = 10
+let mitt-tall = 7
+```
 
 Her er nokre gode eksempel, forklar gjerne kvifor dei er gode:
-- let antallElevar = 23
-- let elevNavn = "Ola"
-- let prosentFullført = 85
-- let sum = 42
+```js
+let antallElevar = 23
+let elevNavn = "Ola"
+let prosentFullført = 85
+let sum = 42
+```
 
 ## 3. Variablar og bruken av disse
 Skriv eit program som skriver "5 ganger 10 er 50" til konsoll ved å bruke variablar for tala 5, 10 og 50.
 
 ## 4. Variabler, epostadresser
 Skriv et program som bruker variablene under (erstatt variabelnavnene med mer passende navn) til å skrive forslag til e-post adresser til konsoll. Be gjerne om input fra brukeren.
-- let en = fornavn
-- let to = etternavn
-- let tre = domene
+
+```js
+let en = fornavn
+let to = etternavn
+let tre = domene
+```
 
 Kriterier:
-- Epostadressene skal bestå av fornavn og etternavn, separert med punktum, etterfulgt av @ og et valgfritt domene, for eksempel "test.testesen@bedrift.no".
-- Epostadressene som skrives ut skal være uten mellomrom.
-- Variabelen som inneholder "domene" skal ikke inneholde "@".
+- Epostadressene skal bestå av fornavn og etternavn, separert med punktum, etterfulgt av @ og et valgfritt domene, for eksempel "test.testesen@bedrift.no"
+- Epostadressene som skrives ut skal være uten mellomrom, og ikke inneholde æ, ø og å (eksempelvis blir `jo bjørnar` til `jo.bjornar`)
+- Variabelen som inneholder "domene" skal ikke inneholde "@"
 - Epostadressen skal lagres i en egen variabel, og denne nye variabelen skal printes ut
 
 ## 5. Variabler, 
 - Hvorfor blir ikke regnestykket under regnet ut når console.log-setningen kjøres?
 `console.log("4 + 6");`
 - Hvorfor blir to forskjellige tall printet når koden under kjøres?
-    ```
+    ```js
     let a = 3.4;
     let b = 20.5;
     let total = a * b;
@@ -59,7 +68,7 @@ Kriterier:
     console.log(parseInt(total));
     ```
 - Hva er innholdet i variabelen “poeng” etter at denne koden kjøres?
-    ```
+    ```js
     let poeng = 0;
     poeng = poeng + 1;
     poeng++;
@@ -68,16 +77,14 @@ Kriterier:
 
 ## 6. Variabler, 
 - Hva er feil med koden i "Kodebit 1" under? Rett den opp så den kjører.
-    ```
+    ```js
     let gate = 'Kongens gate'
     let husnr = 432
     let oppgang = b
     let adresse = gate + husnr + oppgang
     console.log(adresse)
     ```
-
 - Skriv adressen ut på følgende to måter ved å bruke variabler: `Adressen er Kongens gate 432b` og `Gaten er Kongens Gate, husnummeret er 432, oppgang b`.
-
 
 ## 7. Variabler og utregning
 Les inn to tall fra brukeren. Summer disse, og skriv ut resultatet. Bruk gjerne prompt, men få til å lese fra en form også dersom du har vært borte i det før.
@@ -114,7 +121,7 @@ Nokre fleire krav du kan legge til?
 ## 10. Variablar og valgsetning (if)
 Spør brukaren eit spørsmål. Dersom eit visst ord er inne i setningen så skriv du eit bekreftande svar, som «å, eg og likar …».
 
-(Hint: indexOf eller includes. Bruk gjerne begge.)
+(Hint: `indexOf()` eller `includes()`. Bruk gjerne begge.)
 
 [Løysingsforslag](https://github.com/hausnes/oppgavesamling/tree/main/l%C3%B8sningsforslag/includes)
 
@@ -133,7 +140,11 @@ Legg til fleire eigenskapar du kan hente ut om du ynskjer. Liste over anbefalte 
 ## 12. Valgsetningar: Aldersgrense
 Lag ei aldersgrense på nettsida di. Spør brukaren kor gamal h*n er. Dersom over 18 kan du vise eit kattebilete pluss litt tekst, dersom ikkje skal du gje beskjed om at innhaldet dessverre er sperra (el.l.).
 
-Hint: `img src=""` er lovleg å bruke. Då vises ikkje eit bilete i heile tatt.
+Hint: 
+- `img src=""` er lovleg å bruke. Då vises ikkje eit bilete i heile tatt
+- Det er fleire måtar å gjere noko "usynleg" på, til dømes `visibility` og `display` (frå CSS)
+- Du kan lukke ei fane (den aktive) frå JS i nokre nettlesarar, men dette vil ikkje alltid fungere
+- Du kan alltid "redirecte" til ei anna nettside
 
 ## 13. ⭐ Valgsetningar: Førarkort
 Lag ein enkel app som kan hjelpe folk med å få vite kva setifikat dei kan ta. Du ber om alderen og presenterer deretter bileter og tekst som fortel kva dei kan ta sertifikat på (meir avansert om du vil: [Lovdata](https://lovdata.no/forskrift/2004-01-19-298/§3-1)):
@@ -144,6 +155,8 @@ Lag ein enkel app som kan hjelpe folk med å få vite kva setifikat dei kan ta. 
 - 24 år: buss
 
 Kan du legge inn ei øvre aldersgrense òg? Kanskje som ein beskjed om at du må gjennomføre faste kontrollar dersom du er over eit visst antall år?
+
+Det er anbefalt å teikne eit flytskjema for denne oppgåva.
 
 ## 14. ⭐ Gjettespel
 Før du begynner på oppgåva: Finn ut korleis du kan generere tilfeldige tal. Hint `Math.random()` hjå `MDN`. Her finn du meir generelle og brukandes hjelp enn det som står i boka.
@@ -335,7 +348,7 @@ Forslag til fokus:
 - Ekstra: Sjekk at det ikkje blir bedt om fleire skryteord enn det ligg i arrayen. Sjå òg til at det er minst 1 stk. skryteord.
 
 Samling med eventuelle skryteord (eksempel):
-```
+```js
 let skryteOrd = [
     "sjenerøs",
     "omgjengelig",
@@ -385,7 +398,7 @@ Hint: Bruk «Date»-objektet. `let tid = new Date();` Slå opp kva du kan hente 
 4.	Skriv ut alle filmene. Bruk en løkke for å gå gjennom arrayen og skrive filmenes tittel og regissør til nettsiden.
 5.	Sorter objektene i arrayen etter filmtittel. Skriv ut den sorterte arrayen til nettsiden for å sjekke at de er sortert riktig.
 
-## 32. Påskerenn
+## ⭐ 32. Påskerenn
 Du skal lage eit program som skal brukast under det årlege påskerennet på stølsområdet Olastøl i Hardanger. Her samlast gode hyttenaboar for å gjennomføre konkurransar i 3 stk. ulike aktivitetar. 
 
 Prestisje, knekte lårhalsar og forholdsvis godt humør er viktige stikkord.
@@ -431,10 +444,10 @@ Eksempelvis vil du dersom du hoppar 123 meter i ein bakke med K-punkt på 120 me
 - Stilpoeng reknast ut slik at 5 ulike dommerar gjer sine karakterar mellom 0 og 20, med intervall på 0.5. Det vil sei at ein til dømes kan gje 14.5 og 18, men ikkje 14.23 osv. Når alle har gjort dette skal høgaste og lågaste karakter strykast. Det er altså berre dei 3 karakterane ”i midten” som er med i endeleg poengsum.
 - Total poengsum reknast ut ved at du tek lengdepoenga og legg saman med stilpoenga.
 
-## 34. API-kall, createElement og appendChild
+## ⭐ 34. API-kall, createElement og appendChild, analyse
 
 ### Del 1:
-Bruk [randomuser.me](https://randomuser.me/) for å hente ein tilfeldig “person” og opprett deretter ei overskrift med navn, ei lenke/paragraf med e-posten og eit bilete. Bruk createElement og appendChild for å lage HTML-en.
+Bruk [randomuser.me](https://randomuser.me/) for å hente ein tilfeldig “person”, og opprett deretter ei overskrift med navnet til personen du henta, ei lenke/paragraf med e-posten og eit bilete. Bruk createElement og appendChild for å lage HTML-en.
 
 ### Del 2:
 Denne gongen ber du brukaren av programmet om å oppgje kva hen er på utkikk etter, til dømes kan du spørre om:
@@ -445,3 +458,15 @@ Denne gongen ber du brukaren av programmet om å oppgje kva hen er på utkikk et
 Deretter utfører du det same API-kallet og opprettar HTML-en basert på dette. 
 
 Bruk òg tid på å plassere innhaldet i div-boksar og stilsett dette slik at det ser bra ut vha. CSS.
+
+### Del 3:
+No skal du lage ein faktisk "tjeneste" ut av konseptet over. Til dømes kan du lage ein eigen "Tinder"-versjon. 
+
+Forslag: 
+- presenter ein og ein person for brukaren 
+- la brukaren velgje å "like" eller "swipe vekk" denne
+    - Dersom ein person får ein "like" havnar denne i ei liste (til dømes array med objekt)
+    - I det andre tilfellet kan du leggje personen til i ei anna liste
+- Analyser data (listene frå punktet over):
+    - Forsøk å gjennomfør ein tolkning av data du sit att med
+    - Kva type personar blir "typisk likt"? Ser du noko mønster?
