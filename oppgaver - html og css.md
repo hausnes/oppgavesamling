@@ -4,7 +4,7 @@ Har det ein verdi å kunne løyse oppgåvene under utan å måtte slå opp alt h
  
 Snakk saman, eller snakk med deg sjølv, når du løyser oppgåvene. Eg kjem til å repetere og diskutere oppgåvene i fellesskap ved første/neste høve.
 
-## Samleoppgåve, grunnleggande HTML, CSS og JS:
+## 1. Samleoppgåve, grunnleggande HTML, CSS og JS:
 
 `Prosjektmappe` og `HTML`-dokument:
 - Opprett ei mappe som oppgåva skal lagrast i. 
@@ -31,10 +31,11 @@ Opprett eit `CSS`-dokument.
     - Margin til 1 em.
     - …
 
-Forsøk i tillegg å legge til: 
-- Ein midlertidig endring av til dømes bakgrunnsfarge dersom du tek muspeikaren over eit element (del av nettsida), eksempelvis ei overskrift (h1).
-- Ein animasjon/gradvis overgang til endringen over, og tilbake til originaltilstand.
-- Legg til meir om tid og lyst!
+- Forsøk i tillegg å legge til: 
+    - Bruk [Google Fonts](https://fonts.google.com/), eller finn andre spanande alternativ (kva finst av moglegheiter?)
+    - Ein midlertidig endring av til dømes bakgrunnsfarge dersom du tek muspeikaren over eit element (del av nettsida), eksempelvis ei overskrift (h1).
+    - Ein animasjon/gradvis overgang til endringen over, og tilbake til originaltilstand.
+    - Legg til meir om tid og lyst!
 
 Opprett eit `Javascript`-dokument.
 - Koble Javascript-dokumentet til HTML. Sjå til at JS-koden ikkje køyrer før HTML og CSS er lasta inn.
@@ -45,12 +46,17 @@ Opprett eit `Javascript`-dokument.
 - Opprett ein HTML-tag i JS, endre innhaldet og legg den til i DOM-en.
 - Legg til meir om tid og lyst!
 
-## Bilder, base64
+## 2. Bilder, base64
 Utforsk: Hvordan bruke base64 for å lagre/bruke bilder i for eksempel en webapplikasjon. 
 
 Du kan bruke https://elmah.io/tools/base64-image-encoder/ Les om tjenesten her inne, og forsøk gjerne å bruke dette på en enkel nettside.
 
-## Bilder, SVG
+## 3. Bilder, SVG
 Utforsk: Hvordan bruke SVG-filer på nettsidene dine? Hva er fordelene? Hvor mye plass tar disse "filene" (må det være en fil)?
 
 Bruk https://www.w3schools.com/graphics/svg_intro.asp som startpunkt.
+
+## 4. Bilder, favicon
+Utforsk: Hvordan bruke favicon for å gi et (godt) ikon for å skille ut din nettside i fanen i nettleseren? Hvordan kan du lage et slikt ikon?
+
+Bruk https://www.w3schools.com/html/html_favicon.asp som startpunkt.
