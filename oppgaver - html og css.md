@@ -17,13 +17,13 @@ Snakk saman, eller snakk med deg sjølv, når du løyser oppgåvene. Eg kjem til
 Opprett eit `CSS`-dokument.
 - Koble stilarket til HTML.
 - Stilset som eit minimum ved å endre bakgrunnsfarge, skriftfarge, margin, padding, skrifttype og størrelse på enkelte, utvalte taggar (eksempelvis h1, h2 og p).
-- Lag ein `klasse` som kan gjenbrukast til å gjere fylgjande:
+- Lag og bruk ein navngitt `klasse` som kan gjenbrukast til å gjere fylgjande:
     - Definerer klassenavnet "boks" 
     - Set bredde og høgde til 500 px.
     - Kantlinje på 1 px bredde.
     - Avstand frå kantlinje til innhold/tekst er 1 em.
     - …
-- Lag ein `ID` som skal bli brukt til å sette eit banner/ein header per side:
+- Lag og bruk ein navngitt `ID` som skal bli brukt til å sette eit banner/ein header per side:
     - Definer ein ID med navn "banner".
     - Set bredde til 100%.
     - Midtstiller teksten.
