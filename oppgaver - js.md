@@ -320,6 +320,9 @@ Du bør og vurdere å bruke en lignende måte å lagre handlekurven på.
 
 Tenk gjennom og begrunn hvorfor dette er en god måte å jobbe på.
 
+[Ressurser til denne oppgaven, samt løsningsforslag](./løsningsforslag/matbutikk/)
+
+
 ## 26. ⭐ async function og await
 Be om data (typisk 1 stk brukar til å byrje med) frå [randomuser.me](https://randomuser.me/documentation). Hugs at dette kan ta litt tid, så her må du bruke async function og await. Data kjem i JSON-format. Konverter etter behov.
 

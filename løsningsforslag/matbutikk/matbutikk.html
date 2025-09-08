@@ -1,0 +1,54 @@
+<!-- 
+
+    NB: 
+    Dette dokumentet inneholder utdatert kode.
+    Hovedpoenget er likevel at du ser denne koden blir mye mer tungvint
+    å jobbe med enn den dynamiske koden (i matbutikk-dynamisk). 
+
+-->
+
+<!doctype html>
+<html>
+    <head>
+    <title>Matbutikk</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="brukerinput.css">
+        <link rel="stylesheet" href="stilark.css">
+    </head>
+    <body>
+        <div class="innpakning">
+            <h2>butikken.no</h2>
+
+            <h1>Velg varene du ønsker å kjøpe.</h1>
+
+            <div id="handlekurv">
+                <h3>Handlekurv</h3>
+                <p id="handlekurvInnhold"></p> <!-- Betre å bruke liste? <ul> eller <ol>, og <li> -->
+            </div>
+
+            <div id="varer">
+                <div class="vare">
+                    <h3>Gulrot</h3>
+                    <img src="mat/mat_19.png">
+                    <p>Pris: 14.90 kr</p>
+                    <button id="knappGulrot" data-pris="14.90" data-varenavn="Gulrot">Kjøp</button>
+                </div><!-- avsluttar vare -->
+                <div class="vare">
+                    <h3>Rødløk</h3>
+                    <img src="mat/mat_01.png">
+                    <p>Pris: 8.30 kr</p>
+                    <button id="knappRodlok" data-pris="8.30" data-varenavn="Rodlok">Kjøp</button>
+                </div><!-- avsluttar vare -->
+                <div class="vare">
+                    <h3>Agurk</h3>
+                    <img src="mat/mat_14.png">
+                    <p>Pris: 12.90 kr</p>
+                    <button id="knappAgurk" data-pris="12.90" data-varenavn="Agurk">Kjøp</button>
+                </div><!-- avsluttar vare -->
+            </div>
+        </div>
+
+        <!-- Kode -->
+        <script src="matbutikk.js"></script>
+    </body>
+</html>

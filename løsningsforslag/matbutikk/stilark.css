@@ -1,0 +1,38 @@
+body {
+    background-color: #e0e0e0;
+    font-family: "Century Gothic", Arial, sans-serif;
+    font-size: 14px;
+    color: #323232;
+  }
+  h1 {
+    font-size: 9ex; /* ni ganger vanlig tekststørrelse */
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  h2 {
+    color: tomato;
+    font-size: 7ex;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .innpakning {
+    width: 80%;
+    margin: 20px auto; /* midtstilt (auto) med luft over og under (20px) */
+  }
+  #handlekurv {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background-color: LightBlue;
+  }
+  #varer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .vare {
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+  }
