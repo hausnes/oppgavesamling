@@ -46,7 +46,7 @@
 ## 5. Lag nettsiden i Visual Studio Code
 
 1. Åpne **Visual Studio Code**.
-2. Gå til **File** > **Open Folder** og velg mappen du nettopp klonet, eventuelt velg `Open in Visual Studio Code`.
+2. Gå til **File** > **Open Folder** og velg mappen du nettopp klonet, eventuelt velg `Open in Visual Studio Code` i Github Desktop.
 3. Høyreklikk i sidestolpen og velg **New File**.
 4. Kall filen **index.html** (dette blir hovedsiden).
 5. Lim inn denne HTML-koden:
