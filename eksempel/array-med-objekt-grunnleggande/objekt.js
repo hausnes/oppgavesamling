@@ -4,7 +4,7 @@ let arrayNavn = ["Ola", "Kari", "Per"];
 console.log("Hele den grunnleggende arrayen med navn:");
 console.log(arrayNavn);
 
-console.log("Bare navn fra arrayen med navn:");
+console.log("Ett og ett navn fra arrayen med navn:");
 for (let navn of arrayNavn) {
     console.log(navn);
 }
