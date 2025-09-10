@@ -9,7 +9,7 @@ for (let navn of arrayNavn) {
     console.log(navn);
 }
 
-console.log("Skriver ut en gitt person (gitt indeks) fra arrayen med navn:");
+console.log("Skriver ut en gitt person (gitt indeks, her 1) fra arrayen med navn:");
 console.log(arrayNavn[1]); // Skriver ut elementet med indeks lik 1 (Kari)
 
 // Et enkelt objekt, gjerne med ekstra informasjon (yrke)
