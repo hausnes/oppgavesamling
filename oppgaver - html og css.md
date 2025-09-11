@@ -10,25 +10,33 @@ Snakk saman, eller snakk med deg sjølv, når du løyser oppgåvene. Eg kjem til
 - Opprett ei mappe som oppgåva skal lagrast i. 
 - Opne denne MAPPA i Visual Studio Code.
 - Opprett eit HTML-dokument. Kva navn?
-- Legg inn minimum fylgjande taggar: html, head, body, h1-h3, p, img, videofil eller YouTube (integrert video), table, …
-- Legg til main, nav, header, footer, aside, … (HTML5)
+- Legg inn minimum fylgjande taggar: 
+    - Standardtaggane: html, head, body, title mm. 
+    - h1-h3 
+    - p 
+    - img
+    - videofil eller YouTube (integrert video)
+    - liste, både nummerert og unummerert 
+    - table 
+    - …
+- Legg til main, nav, header, figure, footer, aside, … (semantiske taggar, HTML5)
 - Legg til meir om tid og lyst!
 
 Opprett eit `CSS`-dokument.
 - Koble stilarket til HTML.
 - Stilset som eit minimum ved å endre bakgrunnsfarge, skriftfarge, margin, padding, skrifttype og størrelse på enkelte, utvalte taggar (eksempelvis h1, h2 og p).
 - Lag og bruk ein navngitt `klasse` som kan gjenbrukast til å gjere fylgjande:
-    - Definerer klassenavnet "boks" 
+    - Definerer klassenavnet ***boks*** 
     - Set bredde og høgde til 500 px.
     - Kantlinje på 1 px bredde.
     - Avstand frå kantlinje til innhold/tekst er 1 em.
     - …
 - Lag og bruk ein navngitt `ID` som skal bli brukt til å sette eit banner/ein header per side:
-    - Definer ein ID med navn "banner".
+    - Definer ein ID med navn ***banner***.
     - Set bredde til 100%.
     - Midtstiller teksten.
-    - Set skriftstørrelsen til 3 em.
-    - Margin til 1 em.
+    - Set skriftstørrelsen til 3rem.
+    - Margin til 1rem.
     - …
 
 - Forsøk i tillegg å legge til: 
