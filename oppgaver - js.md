@@ -9,6 +9,10 @@
 - [ ] Skrive ut til HTML, og kjenne til når du skal bruke `.innerHTML` og `.innerText`.
 - [ ] Samle kode i funksjoner, og kunne kalle på disse etter behov. Du skal kunne bruke disse både med og uten parameter. Du bør også kjenne til navngitte funksjoner, anonyme funksjoner og [`arrow functions`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
 - [ ] Legge til lyttefunksjoner på for eksempel en knapp, og skrive en funksjon som får noe til å skje. `knapp.addEventListener("click", funksjonsnavn)`.
+- [ ] Skrive løkker som går gjennom arrays, og gjøre noe med hvert element i arrayen.
+- [ ] Skrive if-setninger (valgsetninger) som gjør at programmet tar ulike valg basert på input eller andre forhold.
+- [ ] Kjenne til og bruke objekter, både som enkeltobjekt og i arrays.
+- [ ] Kjenne til og bruke innebygde objekter som `Math` og `Date`.
 - [ ] Lese fra HTML vha. et form (skjema). Huske å bruke `.addEventListener("submit", ...)`, og ikke som `"click"` på knappen i formen.
 - [ ] Opprette HTML-elementer og legge de til i DOM-en vha. JavaScript. Her skal du blant annet kunne bruke `createElement()` og `addChild()`.
 - [ ] ...
