@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    padding: 0;
 }
 
 nav {
@@ -8,7 +9,7 @@ nav {
     padding: 1rem;
 
     display: flex;
-    justify-content: center;
+    justify-content:left;
     gap: 1rem;
 }
 
