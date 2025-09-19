@@ -1,12 +1,13 @@
+/* Denne boksen skal innehalde eit bilete, men berre vise eit utval av dette */
 #crop {
     width: 150px;
     height: 150px;
     border: 5px solid black;
-    overflow: hidden;
+    overflow: hidden; /* Gjer at det som ikkje "får plass" i boksen ikkje vises */
 }
 
 #crop img {
     position: relative;
-    top: -210px;
+    top: -210px; /* Desse tala kan du leike deg med for å endre utsnittet/croppen */
     left: -190px;
 }
