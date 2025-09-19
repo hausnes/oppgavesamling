@@ -1,0 +1,12 @@
+#crop {
+    width: 150px;
+    height: 150px;
+    border: 5px solid black;
+    overflow: hidden;
+}
+
+#crop img {
+    position: relative;
+    top: -210px;
+    left: -190px;
+}
