@@ -1,0 +1,60 @@
+html, body {
+    width: 100%;
+    /* height: 100%;  */
+    margin: 0; padding: 0;
+}
+main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "a b c d d"
+    "a f f g i"
+    "e f f h i";
+}
+main > div {
+    border: 1px solid black;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-size: 2rem;
+}
+
+.ga1 { grid-area: a; background-color: yellow; }
+.ga2 { grid-area: b; } /* NB: Denne boksen får satt et bakgrunnsbilde lenger nede i koden */
+.ga3 { grid-area: c; background-color: pink; }
+.ga4 { grid-area: d; background-color: red; }
+.ga5 { grid-area: e; background-color: grey; }
+.ga6 { grid-area: f; background-color: aquamarine; }
+.ga7 { grid-area: g; background-color: rgb(243, 209, 215); }
+.ga8 { grid-area: h; background-color: rgb(228, 227, 253); }
+.ga9 { grid-area: i; background-color: rgb(255, 243, 178); }
+
+.ga2 {
+    background: url('../css-flex/bileter/whale-9619752_640.png');
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 900px) {
+    main {
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "a b c"
+        "a f f"
+        "e f f"
+        "d d g"
+        "i h ."
+        "i . .";
+    }
+}

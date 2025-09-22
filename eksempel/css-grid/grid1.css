@@ -1,0 +1,35 @@
+main {
+    width: 100%;
+    height: 400px;
+    display: grid;
+    gap: 5px;
+    background-color: #c6c6c6;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "t t t t t" 
+    "v h h h h"
+    "v h h h h";
+
+    /* CSS nesting for kun semantiske elementer */
+    header, nav, article {
+        background-color: #aac9c6;
+        border: 1px solid black;
+    }
+}
+
+/* Alternativ til den nestede CSS-en over */
+/* main > header,
+main > nav,
+main > article {
+    background-color: #aac9c6;
+    border: 1px solid black;
+} */
+
+.topp    { grid-area : t; }
+.venstre { grid-area : v; }
+.hoyre   { grid-area : h; }
+
+h1, p {
+    padding: 1rem;
+}
