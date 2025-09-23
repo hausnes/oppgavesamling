@@ -1,0 +1,24 @@
+.board {
+  width: 80vmin;
+  height: 80vmin;
+  display: flex;
+  flex-direction: column;
+
+  .row {
+    display: flex;
+    height: 100%;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .square {
+      width: 100%;
+      background-color: #282828;
+
+      &:nth-child(odd) {
+        background-color: #ebdbb2;
+      }
+    }
+  }
+}
