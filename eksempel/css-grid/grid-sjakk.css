@@ -1,0 +1,43 @@
+.sjakkbrett {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 500px;
+    height: 500px;
+    border: 2px solid #333;
+}
+
+.sjakkbrett div {
+    background-color: #f0d9b5; /* Standard lys farge for alle rutene */
+}
+
+/* Farg ruter som har en mørk farge basert på kombinasjonen av rad og kolonne */
+/* Rutene som skal være mørke har en sum av kolonne- og rad-indeks som er oddetall */
+.sjakkbrett div:nth-child(16n + 2),
+.sjakkbrett div:nth-child(16n + 4),
+.sjakkbrett div:nth-child(16n + 6),
+.sjakkbrett div:nth-child(16n + 8),
+.sjakkbrett div:nth-child(16n + 9),
+.sjakkbrett div:nth-child(16n + 11),
+.sjakkbrett div:nth-child(16n + 13),
+.sjakkbrett div:nth-child(16n + 15) {
+    background-color: #b58863;
+}
+
+/* Grundigere forklaring:
+Hver gang du starter en ny rad (hver åttende rute), snus fargemønsteret. 
+Dette er grunnen til at du må bruke mer komplekse :nth-child selektorer for å plukke ut 
+rutene som skal være mørke. Den første raden starter med en lys rute, mens den andre 
+raden starter med en mørk rute. 
+
+n står for et helt tall som starter på null (0, 1, 2, 3, ...).
+16 er koeffisienten til n. Dette betyr at selektoren hopper over 16 elementer for hver gang n øker.
++ 2 er forskyvningen. Dette betyr at utvalget starter på det andre elementet.
+
+Når disse settes sammen, velger de elementer som har følgende posisjonsnumre:
+Når n = 0: 16 * 0 + 2 = 2
+Når n = 1: 16 * 1 + 2 = 18
+Når n = 2: 16 * 2 + 2 = 34
+Når n = 3: 16 * 3 + 2 = 50
+... og så videre.
+*/
