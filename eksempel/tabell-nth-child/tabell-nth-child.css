@@ -1,0 +1,20 @@
+table {
+    border-collapse: collapse;
+    width: 500px;
+    margin: 2rem auto;
+    font-family: Arial, sans-serif;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 0.7rem 1rem;
+    text-align: left;
+}
+tbody tr:nth-child(even) {
+    background-color: #f6f8fa;
+}
+tbody tr:nth-child(odd) {
+    background-color: #e9ecef;
+}
+img {
+    border-radius: 50%;
+}
