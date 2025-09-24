@@ -1,4 +1,4 @@
-# Oppgavesamling for SQL og datamodellering
+# Oppgavesamling for databaser, SQL og datamodellering
 Mange av oppgåvene her let deg øve deg på å skrive spørringar opp mot ein allerede eksisterande database. 
 
 Du kan skrive spørringane på fleire måtar:
@@ -25,3 +25,34 @@ Bli kjent med strukturen for databasen.
 12.	Finn alle offisielle språk i Europa
 13.	Informasjonen i databasen er utdatert. Velg  de 5 største landene og 5 største byene og oppdater informasjon
 14.	…
+
+## Musikkdatabase (Hilde A.)
+Design en relasjonsdatabase for musikkartister. Lag datamodellen.
+
+Databasen skal minst inneholde følgende tabeller 
+- Artist 
+- Medlem (For band/grupper) 
+- Album 
+- Låt 
+- Sjanger 
+
+Sammmenligne din egen datamodell med vedlagte [musikk.db](/databaser/musikk-hilde/musikk.db)-database.
+
+Oppgaver til vedlagte [musikk.db](/databaser/musikk-hilde/musikk.db)-database:
+Ved hjelp av INSERT SQL:  
+- Legg til artisten Pink Floyd,  
+- Legg til medlemmene til Pink Floyd,  
+- Legg til minst 2 album fra Pink Floyd,  
+- Legg til minst to låter fra hvert album.   
+- For å legge til dette bandet, må du også legge til en ny sjanger i databasen. 
+
+Andre spørringer:
+- Skriv en SELECT SQL som henter ut alle band som begynner med P
+- Skriv SQL som henter ut alle band og alle medlemmer 
+- Skriv SQL som setter inn et dummy band 
+- Skriv delete SQL som sletter dette dummybandet 
+- Skriv SQL som henter ut alle låtene til Pink Floyd og hvilket album de er på 
+- Skriv SQL som henter ut de 2 bandene som har flest låter 
+- Opprett en tabell som inneholder konserter  
+- Sett inn data i konsert tabellen (F.eks Pink Floyd hadde konsert I Roma 20/06/1971 )   
+- Legg til en teoretisk konsert frem i tid 
