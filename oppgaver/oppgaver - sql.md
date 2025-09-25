@@ -1,4 +1,6 @@
 # Oppgavesamling for databaser, SQL og datamodellering
+[Tilbake til samleside](../README.md)
+
 Mange av oppgåvene her let deg øve deg på å skrive spørringar opp mot ein allerede eksisterande database. 
 
 Du kan skrive spørringane på fleire måtar:
@@ -36,10 +38,10 @@ Databasen skal minst inneholde følgende tabeller
 - Låt 
 - Sjanger 
 
-Sammmenligne din egen datamodell med vedlagte [musikk.db](/databaser/musikk-hilde/musikk.db)-database. NB: Denne har, som du sikkert har i din egen modell, noen forenklinger. 
+Sammmenligne din egen datamodell med vedlagte [musikk.db](../eksempel/databaser/musikk-hilde/musikk.db)-database. NB: Denne har, som du sikkert har i din egen modell, noen forenklinger. 
 Tenk gjennom hvordan du kan se relasjoner og få oversikt nå når du ikke har en modell å basere deg på.
 
-Oppgaver til vedlagte [musikk.db](/databaser/musikk-hilde/musikk.db)-database:
+Oppgaver til vedlagte [musikk.db](../eksempel/databaser/musikk-hilde/musikk.db)-database:
 Ved hjelp av INSERT SQL:  
 - Legg til artisten Pink Floyd,  
 - Legg til medlemmene til Pink Floyd,  

@@ -1,6 +1,6 @@
 # Oppgavesamling for JavaScript
 
-[Tilbake til samleside](README.md)
+[Tilbake til samleside](../README.md)
 
 ## 1. Sjekkliste for viktige ting du skal kunne
 - [ ] Definere variabler, og bruke disse (`let` og `const`)
@@ -129,7 +129,7 @@ Spør brukaren eit spørsmål. Dersom eit visst ord er inne i setningen så skri
 
 (Hint: `indexOf()` eller `includes()`. Bruk gjerne begge.)
 
-[Løysingsforslag](https://github.com/hausnes/oppgavesamling/tree/main/l%C3%B8sningsforslag/includes)
+[Løysingsforslag](./løsningsforslag/includes/)
 
 ## 11. Eigenskapar om nettlesaren
 Lag fylgjande oppsummering på nettsida di. NB: Dynamisk. Det vil sei at tala for til dømes bredde, høgde og nettlesarversjon skal endre seg basert på enheten du sit på. Dette kan gjerast på meir eller mindre effektive måtar. Vurder ulike alternativ. 
@@ -164,7 +164,7 @@ Kan du legge inn ei øvre aldersgrense òg? Kanskje som ein beskjed om at du må
 
 Det er anbefalt å teikne eit flytskjema for denne oppgåva.
 
-[Løysingsforslag](./eksempel/ifelse/)
+[Løysingsforslag](../eksempel/js/ifelse/)
 
 ## 14. ⭐ Gjettespel
 Før du begynner på oppgåva: Finn ut korleis du kan generere tilfeldige tal. Hint `Math.random()` hjå `MDN`. Her finn du meir generelle og brukandes hjelp enn det som står i boka.

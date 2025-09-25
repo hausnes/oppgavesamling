@@ -1,4 +1,5 @@
 # Oppgåver innan HTML og CSS
+[Tilbake til samleside](../README.md)
 
 Har det ein verdi å kunne løyse oppgåvene under utan å måtte slå opp alt heile tida?
  
@@ -68,3 +69,13 @@ Bruk https://www.w3schools.com/graphics/svg_intro.asp som startpunkt.
 Utforsk: Hvordan bruke favicon for å gi et (godt) ikon for å skille ut din nettside i fanen i nettleseren? Hvordan kan du lage et slikt ikon?
 
 Bruk https://www.w3schools.com/html/html_favicon.asp som startpunkt.
+
+## 5. Lage ulike design vha CSS grid
+Bruk CSS grid for å gjenskape disse oppsettene (bildet er hentet fra Aschehoug sin IT1-lærebok).
+
+![Bilde av ulike oppsett](../bilder/grid-oppgaver-aschehoug.png)
+
+## 6. Tegne et sjakkbrett vha CSS
+Skriv kode som tegner opp et sjakkbrett på skjermen. 8x8. Annenhver rute svart og hvit. NB: Denne oppgaven kommer typisk etter at du har forstått det grunnleggende ved Flexbox og CSS grid.
+
+[Løsningsforslag](../eksempel/css/sjakkbrett-flex-vs-grid/) ved å bruke både Flexbox og CSS grid.

@@ -1,4 +1,5 @@
 # Oppgavesamling for Node JS og Express
+[Tilbake til samleside](../README.md)
 
 ## Oppgåve 1 – starte prosjekt, og ruter
 - Opprett eit express-prosjekt. Bruk npm for å initialisere prosjektet.
