@@ -3,7 +3,8 @@ Dette er et forsøk på å samle guider, oppgaver, løsningsforslag og eksempler
 
 ## Les guider til utvalgte konsept
 - Hvordan sette opp GitHub, lage din egen nettside og publisere den slik at du (og andre) kan besøke den fra mobil, PC eller dele med venner! [Les guide](./guider/guide%20-%20github%20og%20github%20desktop.md)
-- SQL (`S`tructured `Q`uery `L`anguage) [Les guide](./guider/guide%20-%20sql.md)
+- Databaser og begreper. [Les guide](./guider/guide%20-%20begreper%20rundt%20databaser.md)
+- Spørringer, SQL (`S`tructured `Q`uery `L`anguage). [Les guide](./guider/guide%20-%20sql.md)
 
 ## Se oppgaver (og noen løsningsforslag til disse) for:
 - [HTML og CSS](./oppgaver/oppgaver%20-%20html%20og%20css.md)
