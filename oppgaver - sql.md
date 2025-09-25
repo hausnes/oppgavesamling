@@ -6,7 +6,7 @@ Du kan skrive spørringane på fleire måtar:
 - Skriv spørringar direkte i Visual Studio Code.
 - ...
 
-## SQL - spørringar
+## 1. SQL-spørringar mot "world"-databasen
 Last ned databasefila «world» (lenke: https://dev.mysql.com/doc/index-other.html). Direktelenke: [world.zip](https://downloads.mysql.com/docs/world-db.zip).
 
 Bli kjent med strukturen for databasen.
@@ -26,7 +26,7 @@ Bli kjent med strukturen for databasen.
 13.	Informasjonen i databasen er utdatert. Velg  de 5 største landene og 5 største byene og oppdater informasjon
 14.	…
 
-## Musikkdatabase (Hilde A.)
+## 2. Musikkdatabase (Hilde A.)
 Design en relasjonsdatabase for musikkartister. Lag datamodellen.
 
 Databasen skal minst inneholde følgende tabeller 
@@ -36,7 +36,8 @@ Databasen skal minst inneholde følgende tabeller
 - Låt 
 - Sjanger 
 
-Sammmenligne din egen datamodell med vedlagte [musikk.db](/databaser/musikk-hilde/musikk.db)-database.
+Sammmenligne din egen datamodell med vedlagte [musikk.db](/databaser/musikk-hilde/musikk.db)-database. NB: Denne har, som du sikkert har i din egen modell, noen forenklinger. 
+Tenk gjennom hvordan du kan se relasjoner og få oversikt nå når du ikke har en modell å basere deg på.
 
 Oppgaver til vedlagte [musikk.db](/databaser/musikk-hilde/musikk.db)-database:
 Ved hjelp av INSERT SQL:  
@@ -55,4 +56,27 @@ Andre spørringer:
 - Skriv SQL som henter ut de 2 bandene som har flest låter 
 - Opprett en tabell som inneholder konserter  
 - Sett inn data i konsert tabellen (F.eks Pink Floyd hadde konsert I Roma 20/06/1971 )   
-- Legg til en teoretisk konsert frem i tid 
+- Legg til en teoretisk konsert frem i tid
+
+## 3. "Chinook", stor musikkdatabase
+Last ned [«chinook.zip»](https://www.sqlitetutorial.net/sqlite-sample-database/).
+
+Pakk ut fila og dobbeltklikk på den for å opne i SQLite Studio. Bla gjennom og sjå kva tabellane heiter, og bruk modellen frå lenka over (eller vedlagt bilete) til å få litt oversikt over databasen.
+
+![Chinook datamodell](./bilder/sqlite-sample-database-color-chinook.jpg)
+
+Skriv deretter fylgjande spørringar:
+1. Alle artistane som ligg inne hjå dette plateselskapet.
+2. Alle artistane og kva album dei har.
+3. Alle artistane sine album, og kor mange låtar det er per album.
+
+Løysingsforslag for oppgåve nr. 3:
+
+````sql
+SELECT artists.Name, albums.Title, COUNT(*) AS antall_spor
+FROM artists
+INNER JOIN albums ON artists.ArtistId = albums.ArtistId
+INNER JOIN tracks ON albums.AlbumId = tracks.AlbumId
+GROUP BY albums.AlbumId
+LIMIT 20; 
+```
