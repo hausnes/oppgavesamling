@@ -63,7 +63,7 @@ Last ned [«chinook.zip»](https://www.sqlitetutorial.net/sqlite-sample-database
 
 Pakk ut fila og dobbeltklikk på den for å opne i SQLite Studio. Bla gjennom og sjå kva tabellane heiter, og bruk modellen frå lenka over (eller vedlagt bilete) til å få litt oversikt over databasen.
 
-![Chinook datamodell](./bilder/sqlite-sample-database-color-chinook.jpg)
+![Chinook datamodell](../bilder/sqlite-sample-database-color-chinook.jpg)
 
 Skriv deretter fylgjande spørringar:
 1. Alle artistane som ligg inne hjå dette plateselskapet.
