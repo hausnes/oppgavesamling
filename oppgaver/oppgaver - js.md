@@ -116,7 +116,7 @@ Vidare: Same som forrige, men no skriv brukaren inn eit hexadesimalt tall (eksem
 ## 9. ⭐ Variablar og enkle utreknignar
 La brukaren skrive inn to sjølvvalte (stads)namn og berekn deretter differansen i antall teikn. Forsøk gjerne å bruke tekstfelt og ein knapp som i skjermbiletet under. Eventuelt prompt for å gjere det enklare og tryggare. Pass i tillegg på at du unngår minusteikn i utskrifta dersom den første staden har færre antall teikn enn den andre (hint: absolutt verdi).
 
-![Differanse i antall teikn](./bilder/differanse.png)
+![Differanse i antall teikn](../bilder/differanse.png)
 
 Bonusoppgåve: Handter brukarfeil, som til dømes manglande input.
 
@@ -134,7 +134,7 @@ Spør brukaren eit spørsmål. Dersom eit visst ord er inne i setningen så skri
 ## 11. Eigenskapar om nettlesaren
 Lag fylgjande oppsummering på nettsida di. NB: Dynamisk. Det vil sei at tala for til dømes bredde, høgde og nettlesarversjon skal endre seg basert på enheten du sit på. Dette kan gjerast på meir eller mindre effektive måtar. Vurder ulike alternativ. 
 
-![Nettlesareigenskapar](./bilder/nettlesareigenskapar.png)
+![Nettlesareigenskapar](../bilder/nettlesareigenskapar.png)
 
 Legg til fleire eigenskapar du kan hente ut om du ynskjer. Liste over anbefalte ting å kjenne til:
 -	Operativsystem (typisk Windows, MacOS, ChromeOS, ulike Linux-variantar el.l.)
@@ -205,11 +205,11 @@ Ta utgangspunkt i 2 terningar, eller fleire. Når sida lastast på nytt, eller n
 
 ### V1: Enkel versjon:
 
-![terningspel-enkel](./bilder/terning_v1.png)
+![terningspel-enkel](../bilder/terning_v1.png)
 
 ### V2: Meir avansert versjon:
 
-![terningspel-avansert](./bilder/terning_v2.png) 
+![terningspel-avansert](../bilder/terning_v2.png) 
 
 ### v3: Vidare arbeid 
 Bruker løkker og arrays for å generere så mange terningkast som brukaren ynskjer.
@@ -220,11 +220,11 @@ Du skal lage deler av ein app for ungar. Nødvendige bileter skal du laste ned s
  
 Oppstart. (Manglar informasjon til brukaren, mellom anna.)
 
-![egg-uknust](./bilder/egg-uknust.png)
+![egg-uknust](../bilder/egg-uknust.png)
 
 Steg/klikk nr. 4: Kylling inne i egg. Manglar elles nokre detaljar frå oppgåvetekst.
 
-![egg-knust](./bilder/egg-knust.png)
+![egg-knust](../bilder/egg-knust.png)
 
 Funksjonalitet vidare, når brukaren trykker på egget:
 - Klikk nr. 1: Egget får ei lita sprekke tvers over.
@@ -237,8 +237,8 @@ Presenter innhaldet på en oversiktelig og god måte. Bileta skal vere tilpassa 
 
 ## 20. Gjettespel, extended edition
 
-![gjettespel-steg1](./bilder/gjettespel_v1.png)
-![gjettespel-steg2](./bilder/gjettespel_v2.png)
+![gjettespel-steg1](../bilder/gjettespel_v1.png)
+![gjettespel-steg2](../bilder/gjettespel_v2.png)
 
 Grunnfunksjonalitet
 NB: Dette programmet vil etterkvart få meir avanserte krav til funksjonalitet.
@@ -278,8 +278,8 @@ Slå opp på `W3Schools` korleis du refererer til fargar i dei ulike “systema�
 
 Bruk den tilfeldige fargen for gjere ein endring på bakgrunnsfargen til body (avansert: ved faste intervall). Skriv til ei kvar tid ut kva som er satt som bakgrunnsfarge. Sjå eksempel her:
 
-![farger1](./bilder/fargeendring_v1.png)
-![farger2](./bilder/fargeendring_v2.png)
+![farger1](../bilder/fargeendring_v1.png)
+![farger2](../bilder/fargeendring_v2.png)
 
 Lag gjerne animasjon av overgangen mellom ein del ulike fargar òg, om du har lyst å gå vidare i pensum.
 
@@ -348,7 +348,7 @@ Bruk tid på å planlegge løysinga! Gjerne saman med nokon andre. Går det an �
 ## 28. Array-repetisjon, “skryteApp”
 Det er dårleg stemining i klasserommet. Elevar snakkar stygt til kvarandre. Løysinga blir derfor å lage eit program som gjer som resultat noko som dette:
 
-![skryt](./bilder/skryt.png)
+![skryt](../bilder/skryt.png)
 
 Forslag til fokus:
 - Spør kven ein skal skryte av.
