@@ -1,6 +1,13 @@
 # SQL - en kort introduksjon
 
-SQL (`S`tructured `Q`uery `L`anguage) er språket vi bruker for å jobbe med databaser, noe som inkluderer å opprette og manipulere struktur og innhold, samt å be databasen om å vise den informasjonen du er ute etter. Denne guiden viser noen av de viktigste kommandoene med konkrete eksempler.
+SQL (`S`tructured `Q`uery `L`anguage) er språket vi bruker for å jobbe med databaser, noe som inkluderer å opprette og manipulere struktur og innhold, samt å be databasen om å vise den informasjonen du er ute etter. 
+
+## Øvinger i nettleseren
+Her er noen ressurser som lar deg øve på å skrive SQL i nettleseren, uten at du trenger å kjøre noe lokalt på maskinen din.
+- [Sandbox SQL](https://sandboxsql.com/) 
+- [SQL PD](https://sqlpd.com/) (du er "politi, og skal løse saker vha. SQL)
+
+Denne guiden viser noen av de viktigste kommandoene med konkrete eksempler.
 
 ## 1. CREATE TABLE - Lag en ny tabell
 
