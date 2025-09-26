@@ -6,6 +6,7 @@ SQL (`S`tructured `Q`uery `L`anguage) er språket vi bruker for å jobbe med dat
 Her er noen ressurser som lar deg øve på å skrive SQL i nettleseren, uten at du trenger å kjøre noe lokalt på maskinen din.
 - [Sandbox SQL](https://sandboxsql.com/) 
 - [SQL PD](https://sqlpd.com/) (du er "politi, og skal løse saker vha. SQL)
+- [SQLBolt](https://sqlbolt.com/)
 
 Denne guiden viser noen av de viktigste kommandoene med konkrete eksempler.
 
