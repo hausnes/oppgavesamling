@@ -1,7 +1,9 @@
 # Oppgavesamling for Node JS og Express
 [Tilbake til samleside](../README.md)
 
-## Oppgåve 1 – starte prosjekt, og ruter
+## Oppgåve 1: Samleoppgåve, "the basics"
+
+### Del 1 – starte prosjekt, og ruter
 - Opprett eit express-prosjekt. Bruk npm for å initialisere prosjektet.
 - Installer pakken express.
 - Opprett app.js.
@@ -13,14 +15,14 @@
 
 Bruk eigne ord og forklar/diskuter (gjerne med ein nabo, eller lærar).
 
-## Oppgåve 2 – SQL og database
-- Opprett ein database. Bruk SQL eller https://sqlitestudio.pl/ for å lage ein enkel db med ein enkelt tabell «bruker». Den skal innehalde brukarid, epost, namn og passord. Fyll inn med eksempeldata, minst 3 stk. brukarar.
+### Del 2 – SQL og database
+- Opprett ein database. Bruk SQL eller [SQLiteStudio](https://sqlitestudio.pl/) for å lage ein enkel db med ein enkelt tabell «bruker». Den skal innehalde brukarid, epost, namn og passord. Fyll inn med eksempeldata, minst 3 stk. brukarar.
 - Installer pakken better-sqlite3 i Node-prosjektet ditt.
 - Lag ei rute i app.js som hentar ut all informasjonen frå databasen vha. ein spørring, og viser denne fram, gjerne som rein JSON no i første omgang.
 
 …
 
-## Oppgåve 3 – Generere HTML frå JSON
+### Del 3 – Generere HTML frå JSON
 Me tek utgangspunkt i ruta frå oppgåve 2 som returnerte ei JSON-fil.
 
 Lag eit HTML-dokument i public-mappa som du kallar `brukere.html`.
@@ -31,7 +33,7 @@ Tips til utviding: Legg til profilbilete for brukaren. Korleis er det best å ha
 
 …
 
-## Oppgåve 4 – Opprette ein brukar via nettside
+### Del 4 – Opprette ein brukar via nettside
 Lag ei nettside som gjer det mogleg å opprette ein brukar, og skrive denne til databasen.
 
 Her må du hugse å:
@@ -42,10 +44,10 @@ Her må du hugse å:
 
 …
 
-## Oppgåve 5 – Kryptering av passord
+### Del 5 – Kryptering av passord
 Benytt bcrypt for å kryptere passordet som blir benytta i oppgåve 4. 
 
-## Oppgåve 6 – Nytt miniprosjekt: Nettavis
+## Oppgåve 2: Prosjekt - nettavis
 Besøk ein artikkel på NRK.no og lag ein datamodell for korleis du meiner denne ser ut.
 
 Steg 1: Gå gjennom artikkelen og tenk gjennom kva tabellar som er nødvendige, og kva relasjonar som gjeld mellom desse.
@@ -62,3 +64,24 @@ Lever inn:
 - Skjermbilete av spørringar (2 stk.) som viser alle artiklane som tilfredsstiller fylgjande krav:
     - "Jo Bjørnar Hausnes" er ein av journalistane
     - "Jo Bjørnar Hausnes" og "Trond Sneåas Skauge" sine beste saker saman (mest populære basert på antall visningar)
+
+## Oppgåve 3: Prosjekt – enkel chatteapplikasjon
+Lag ein chatteapplikasjon med Node.js, Express og better-sqlite3.
+
+### Enkel versjon: 
+
+Du skal kunne:
+- Sjå alle meldingar som er sendt til ei kvar tid.
+- Sende eigne meldingar via eit skjema på ei nettside.
+- Forslag: Del sida inn i to kolonnar, der venstre kolonne viser meldingane, og høgre kolonne har skjemaet for å sende meldingar.
+
+Databasen skal berre ha ein tabell, melding, med kolonnane id, namn, melding og tidspunkt.
+
+### Utvida versjon:
+Tips til meir avansert funksjonalitet:
+- Registrere ein brukar med epost, namn og passord.
+- Logge inn med epost og passord.
+- Sende meldingar til andre brukarar.
+- Sjå meldingar du har sendt og motteke.
+- Vis meldingane på nettsida i sanntid ved hjelp av WebSocket (bruk pakken ws).
+- Implementer enkel autentisering slik at brukarar må logge inn for å sende meldingar
