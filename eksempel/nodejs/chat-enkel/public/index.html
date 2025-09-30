@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="nn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Særs enkel chat</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, Arial, sans-serif; margin: 1rem auto; max-width: 720px; padding: 0 1rem; }
+    h1 { font-size: 1.6rem; }
+    form { display: grid; gap: .5rem; grid-template-columns: 1fr; margin-block: 1rem; }
+    input, textarea, button { font: inherit; padding: .5rem; }
+    textarea { min-height: 6rem; }
+    .row { display: flex; gap: .5rem; }
+    #messages { display: grid; gap: .5rem; }
+    .msg { border: 1px solid #8884; border-radius: .5rem; padding: .5rem .75rem; }
+    .meta { font-size: .85rem; opacity: .7; }
+  </style>
+</head>
+<body>
+  <h1>Særs enkel chat</h1>
+
+  <form id="msgForm">
+    <div class="row">
+      <input id="name" name="name" placeholder="Namn" required maxlength="50" />
+    </div>
+    <textarea id="message" name="message" placeholder="Skriv melding…" required maxlength="1000"></textarea>
+    <div class="row">
+      <button type="submit">Send</button>
+      <button type="button" id="refresh">Last inn på nytt</button>
+    </div>
+  </form>
+
+  <section>
+    <h2>Alle meldingar</h2>
+    <div id="messages" aria-live="polite"></div>
+  </section>
+
+  <script>
+    const $ = (sel) => document.querySelector(sel);
+    const messagesEl = $('#messages');
+    const form = $('#msgForm');
+    const nameInput = $('#name');
+    const msgInput = $('#message');
+    const refreshBtn = $('#refresh');
+
+    // Hugs namn mellom sidene
+    nameInput.value = localStorage.getItem('chatName') || '';
+    nameInput.addEventListener('change', () => localStorage.setItem('chatName', nameInput.value.trim()));
+
+    async function fetchMessages() {
+      messagesEl.textContent = 'Laster…';
+      try {
+        const res = await fetch('/api/messages');
+        const data = await res.json();
+        if (!Array.isArray(data)) throw new Error('Ugyldig svar');
+        if (data.length === 0) {
+          messagesEl.textContent = 'Ingen meldingar enda.';
+          return;
+        }
+        messagesEl.innerHTML = '';
+        for (const m of data) {
+          const div = document.createElement('div');
+          div.className = 'msg';
+          const when = new Date(m.created_at).toLocaleString();
+          div.innerHTML = `<div class="meta"><strong>${escapeHtml(m.name)}</strong> — <time>${when}</time></div>
+                           <div class="text">${linkify(escapeHtml(m.message))}</div>`;
+          messagesEl.appendChild(div);
+        }
+      } catch (e) {
+        messagesEl.textContent = 'Feil ved henting av meldingar.';
+        console.error(e);
+      }
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const payload = { name: nameInput.value.trim(), message: msgInput.value.trim() };
+      if (!payload.name || !payload.message) return;
+      try {
+        const res = await fetch('/api/messages', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (!res.ok) throw new Error('Feil ved innsending');
+        msgInput.value = '';
+        await fetchMessages();
+      } catch (e) {
+        alert('Kunne ikkje sende melding.');
+        console.error(e);
+      }
+    });
+
+    refreshBtn.addEventListener('click', fetchMessages);
+
+    // Små hjelpefunksjonar for trygg visning
+    function escapeHtml(str) {
+      return str.replace(/[&<>"]/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    }
+    function linkify(text) {
+      const urlRe = /(https?:\/\/[^\s]+)/g;
+      return text.replace(urlRe, (url) => `<a href="${url}" target="_blank" rel="noopener">${url}</a>`);
+    }
+
+    // Last inn ved oppstart
+    fetchMessages();
+  </script>
+</body>
+</html>
