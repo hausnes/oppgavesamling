@@ -11,9 +11,9 @@ både designet av appen og hva den skal gjøre, samt hvordan du skal lagre data 
 Her er det mye du kan tenke på, men ofte blir teknologien valgt for deg i de ulike prosjektene du jobber med.
 
 Som nå, da vi skal bruke følgende "stack":
-- Node JS
-- Express
-- SQLite, og mer konkret better-sqlite3-biblioteket
+- `Node JS`
+- `Express`
+- `SQLite`, og mer konkret `better-sqlite3`-biblioteket
 
 Husk igjen at vi i dette prosjektet gjør ting så enkelt som mulig (i første omgang).
 
@@ -23,19 +23,30 @@ Todelt GUI, et område for å vise meldinger, og et annet for å skrive inn nye 
 ### Datamodell og database:
 Vi forenkler veldig, og lager en datamodell som viser hva vi ønsker å ha med. Vi må som sagt også bestemme hvilken database vi ønsker å bruke. En av de enkleste å komme i gang med er SQLite.
 
-Datamodell:
+#### Datamodell:
 
 ![datamodell-chatte-app](../bilder/er-modell-chatapp-enkel.png)
 
 At tid er TEXT kan oppleves rart, men det kommer an på hvordan SQLite fungerer. Her er noen tips om hvordan dette kan bli løst:
-- Standard tidskodeformat: YYYY-MM-DD HH:MM:SS
+- Standard tidskodeformat: `YYYY-MM-DD HH:MM:SS`
 - I Javascript/SQL kan vi nå for eksempel bruke: 
 ```sql
 const stmt = db.prepare('INSERT INTO melding (tekst, created_at) VALUES (?, ?)');
 stmt.run('Hei verden!', new Date().toISOString());
 ```
+#### Database
 
 Opprett databasen, eksempelvis i SQLiteStudio, og legg inn noen testdata.
+
+### Sjekkpunkt!
+
+Skriv noen spørringer i ønsket verktøy, som SQLiteStudio, for å sjekke at 
+det ligger data i databasen. Spørringen under skal returnere data du har lagt inn.
+
+```sql
+SELECT * 
+FROM melding; 
+```
 
 ## Steg 2: Sett opp prosjektet
 Sjekk at Node JS er installert. Skriv følgende i terminalen:
@@ -93,8 +104,10 @@ app.listen(3000, () => {
 ### Sjekkpunkt!
 
 Nå kontrollerer du om serveren fungerer ved å gå til nettleseren din og besøke følgende adresser:
-- http://localhost:3000 med forventet resultat "Hei!" på nettsiden
-- http://localhost:3000/hentMeldinger - med forventet resultat: en JSON-fil med data fra databasen
+- http://localhost:3000 
+    - Forventet resultat: "Hei!" på nettsiden.
+- http://localhost:3000/hentMeldinger 
+    - Forventet resultat: en JSON-fil med data fra databasen. Kjenner du igjen data som ligger der?
 
 Feilene som eventuelt dukker opp på punktene over, handler som oftest om at du har brukt andre navn inne i databasen. 
 Få begge rutene til å fungere før du går videre.
