@@ -77,6 +77,8 @@ Du skal kunne:
 
 Databasen skal berre ha ein tabell, melding, med kolonnane id, namn, melding og tidspunkt.
 
+[Løysingsforslag](../eksempel/nodejs/chat-klasserom/).
+
 ### Utvida versjon:
 Tips til meir avansert funksjonalitet:
 - Registrere ein brukar med epost, namn og passord.

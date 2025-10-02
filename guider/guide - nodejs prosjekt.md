@@ -221,21 +221,21 @@ databasen vises i console.
 
 Det neste steget blir å få informasjonen som blir skrevet til console, til nå å komme
 i selve HTML-en. Vi skal bruke `createElement()` og `appendChild()` for å få dette til. Forsøk
-først selv før du ser på løsningen!
+først selv før du ser på løsningen under!
 
 ```js
 for (let melding of meldinger) {
-    //console.log(melding.person + ": " + melding.melding);
-    let paragraf = document.createElement("p");
-    paragraf.innerHTML = melding.person + ": " + melding.melding;
-    utskrift.appendChild(paragraf);
+    const div = document.createElement('div');
+    div.innerHTML = "[" + melding.tid + "]<br> " + melding.person + ": " + melding.melding;
+    utskrift.appendChild(div);
 }
 ```
 
 ## Steg 5: Skrive data til databasen, fra nettsiden
 
 Vi lager nå en `form` (et skjema) i HTML, som vi bruker for å kunne skrive hvem vi er, og hvilken melding
-vi ønsker å dele.
+vi ønsker å dele. Id for meldingene i databasen er autogenerert, så vi trenger ikke å sende dette inn. Tiden
+vi sender inn, kan vi generere i Javascript-koden senere (enten på klientsiden eller serversiden).
 
 HTML-koden for skjemaet kan gjøres slik:
 
@@ -253,16 +253,70 @@ HTML-koden for skjemaet kan gjøres slik:
 
 I tillegg så kan/bør du nå stilsette dette, slik du kan se i den fulle koden. Forslag, forsøk å plasser input til venstre på skjermen, og fremvisning av meldingene til høyre.
 
-Vi legger til Javascript-kode som håndterer å hente data fra skjemaet, i tillegg til en oppdatering av app.js - med en rute som lar oss legge data fra skjemaet inn i databasen.
+Vi oppdaterer først `app.js` for å kunne motta data fra skjemaet, i tillegg til en rute som lar oss legge data fra skjemaet inn i databasen.
 
-Javascript-kode i index.html:
-
-```js
-// Kommer
-```
-
-Legger til rute i `app.js`, som vi bruker i JS-koden over:
+Klargjør `app.js` for å kunne motta data fra skjemaet ved å legge til følgende kode:
 
 ```js
-// Kommer
+// Legg til body-parsing for skjema/JSON
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 ```
+
+Legger til rute i `app.js`, som lar oss legge inn data i databasen:
+
+```js
+// Rute som legger til en melding (klienten sender tid i format YYYY-MM-DD HH:MM:SS)
+app.post('/leggMelding', (req, res) => {    
+    try {
+        let { person, melding, tid } = req.body;
+        person = person.toString().trim();
+        melding = melding.toString().trim();
+        tid = tid.toString().trim();
+
+        console.log('Mottatt melding:', { person, melding, tid });
+
+        // Enkle lengdebegrensninger, hvorfor kan dette være lurt?
+        // if (person.length > 50) person = person.slice(0, 50);
+        // if (melding.length > 1000) melding = melding.slice(0, 1000);
+
+        db.prepare('INSERT INTO melding (person, melding, tid) VALUES (?, ?, ?)')
+        .run(person, melding, tid);
+
+        return res.sendStatus(201); // viktig: avslutt responsen her
+    }
+    catch (err) {
+        console.error('Feil ved innsending av melding:', err);
+        return res.status(500).json({ error: 'Kunne ikke lagre melding' });
+    }
+});
+```
+
+Javascript-kode i `index.html` for å sende data fra skjemaet til serveren er det siste steget i denne enkle appen.
+
+Legg spesielt merke til at vi bruker bruker `await fetch` for å sende data til serveren, og at vi sender data som JSON.
+
+```js
+async function sendMelding(e) {
+    // SPA - single page application = forhindre full sideoppdatering
+    e.preventDefault();
+
+    const person = navnEl.value.trim();
+    const melding = meldingEl.value.trim(); 
+    let tid = new Date().toISOString().replace('T', ' ').substring(0, 19); // NB: To-do: Bør oppdateres til riktig lokal tid
+    // console.log("tid = " + tid);
+
+    const res = await fetch('/leggMelding', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ person, melding, tid })
+    });
+
+    skrivUtMeldinger();
+    meldingEl.value = '';
+}
+```
+
+### Sjekkpunkt!
+Nå kontrollerer du om chatteappen fungerer ved å gå til nettleseren din og besøke følgende adresse:
+- http://localhost:3000 - med forventet resultat der du kan skrive inn navn og melding, og se at dette blir lagret i databasen og vist på nettsiden.
