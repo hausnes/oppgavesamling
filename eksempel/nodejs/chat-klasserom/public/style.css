@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+#left {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    button {
+        padding: 1rem;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 200px;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        height: 2rem;
+    }
+}
+
+#right {
+    flex: 1;
+    padding: 20px;
+}

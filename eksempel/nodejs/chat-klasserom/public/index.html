@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatte-app!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Chatteapp - type enkel</h1>
+        <p>En enkel chatteapp laget med HTML, CSS, JS og Node.js</p>
+    </header>
+    
+    <main>
+        <div id="left">
+        <form id="skjema">
+            <label for="navn">Navn:</label>
+            <input type="text" id="navn" required>
+
+            <label for="melding">Melding:</label>
+            <input type="text" id="melding" required>
+            
+            <button type="submit">Send melding</button>
+        </form>
+        </div>
+
+        <div id="right">
+            <h2>Meldinger:</h2>
+            <div id="utskrift">
+                <!-- Fylles ut av JS -->
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        const utskrift = document.getElementById("utskrift");
+
+        async function skrivUtMeldinger() {    
+            const response = await fetch('/hentMeldinger');
+            const meldinger = await response.json();
+            // console.log(meldinger);
+
+            for (let melding of meldinger) {
+                console.log(melding.person + ": " + melding.melding);
+            }
+        }
+
+        skrivUtMeldinger();
+    </script>
+</body>
+</html>
