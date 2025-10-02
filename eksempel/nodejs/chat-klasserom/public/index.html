@@ -9,20 +9,23 @@
 <body>
     <header>
         <h1>Chatteapp - type enkel</h1>
-        <p>En enkel chatteapp laget med HTML, CSS, JS og Node.js</p>
+        <p>
+            En enkel chatteapp laget med HTML, CSS, JS, Node.js, Express og SQLite (better-sqlite3)
+        </p>
     </header>
     
     <main>
         <div id="left">
-        <form id="skjema">
-            <label for="navn">Navn:</label>
-            <input type="text" id="navn" required>
+            <h1>Skriv inn din melding her</h1>
+            <form id="skjema">
+                <label for="navn">Navn:</label>
+                <input type="text" id="navn" required>
 
-            <label for="melding">Melding:</label>
-            <input type="text" id="melding" required>
-            
-            <button type="submit">Send melding</button>
-        </form>
+                <label for="melding">Melding:</label>
+                <input type="text" id="melding" required>
+                
+                <button type="submit">Send melding</button>
+            </form>
         </div>
 
         <div id="right">
@@ -34,19 +37,44 @@
     </main>
     
     <script>
-        const utskrift = document.getElementById("utskrift");
+        const utskrift = document.getElementById('utskrift');
+        const skjema = document.getElementById('skjema');
+        const navnEl = document.getElementById('navn');
+        const meldingEl = document.getElementById('melding');
 
-        async function skrivUtMeldinger() {    
+        async function skrivUtMeldinger() {
             const response = await fetch('/hentMeldinger');
             const meldinger = await response.json();
-            // console.log(meldinger);
-
+            utskrift.innerHTML = '';
             for (let melding of meldinger) {
-                console.log(melding.person + ": " + melding.melding);
+                const div = document.createElement('div');
+                div.innerHTML = "[" + melding.tid + "]<br> " + melding.person + ": " + melding.melding;
+                utskrift.appendChild(div);
             }
         }
 
         skrivUtMeldinger();
+
+        skjema.addEventListener('submit', sendMelding);
+
+        async function sendMelding(e) {
+            // SPA - single page application = forhindre full sideoppdatering
+            e.preventDefault();
+
+            const person = navnEl.value.trim();
+            const melding = meldingEl.value.trim(); 
+            let tid = new Date().toISOString().replace('T', ' ').substring(0, 19); // NB: To-do: Bør oppdateres til riktig lokal tid
+            // console.log("tid = " + tid);
+
+            const res = await fetch('/leggMelding', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ person, melding, tid })
+            });
+
+            skrivUtMeldinger();
+            meldingEl.value = '';
+        }
     </script>
 </body>
 </html>
