@@ -9,6 +9,8 @@ Navigasjon:
 - [Steg 3: Sette opp server](#steg-3-sette-opp-server)
 - [Steg 4: Legge til en nettside som kan vise innhold fra databasen](#steg-4-legge-til-en-nettside-som-kan-vise-innhold-fra-databasen)
 - [Steg 5: Skrive data til databasen, fra nettsiden](#steg-5-skrive-data-til-databasen-fra-nettsiden)
+- [Løsningsforslag](#løsningsforslag)
+- [Eventuelle fremtidige steg](#eventuelle-fremtidige-steg)
 
 ## Steg 1: Planlegg appen
 Dette kan være så mangt, men det kan være smart å se på hvilken teknologi du ønsker å bruke, i tillegg til
@@ -320,3 +322,18 @@ async function sendMelding(e) {
 ### Sjekkpunkt!
 Nå kontrollerer du om chatteappen fungerer ved å gå til nettleseren din og besøke følgende adresse:
 - http://localhost:3000 - med forventet resultat der du kan skrive inn navn og melding, og se at dette blir lagret i databasen og vist på nettsiden.
+
+## Løsningsforslag
+
+[Se fullstendig kode](../eksempel/nodejs/chat-klasserom/)
+
+## Eventuelle fremtidige steg
+Dette er et veldig enkelt eksempel på en chatteapp, og det er mange ting som kan gjøres for å forbedre den. Her er noen forslag:
+- Auto-oppdatering med SSE/WebSocket, eventuelt forenklet vha. setInterval
+- Enklere moderering (maks lengde, banning-filter, osv.)
+- Enkel paginering og avgrensing av resultater
+- Eget stilark og litt finere utseende
+- Innlogging og brukerhåndtering
+- Sende meldinger til andre brukere
+- Bruke en mer avansert database (PostgreSQL, MySQL, MongoDB, m.m.)
+- ..
