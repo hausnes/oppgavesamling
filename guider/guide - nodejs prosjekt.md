@@ -3,6 +3,13 @@ Dette er et eksempel på hvordan du setter opp et typisk Node JS-prosjekt, her e
 SÆRS enkel chatteapplikasjon. Vi gjør mange forenklinger for å minske kodemengden og kompleksiteten, der
 det anbefales å utvide dette med mer avansert funksjonalitet etter hvert.
 
+Navigasjon:
+- [Steg 1: Planlegg appen](#steg-1-planlegg-appen)
+- [Steg 2: Sett opp prosjektet](#steg-2-sett-opp-prosjektet)
+- [Steg 3: Sette opp server](#steg-3-sette-opp-server)
+- [Steg 4: Legge til en nettside som kan vise innhold fra databasen](#steg-4-legge-til-en-nettside-som-kan-vise-innhold-fra-databasen)
+- [Steg 5: Skrive data til databasen, fra nettsiden](#steg-5-skrive-data-til-databasen-fra-nettsiden)
+
 ## Steg 1: Planlegg appen
 Dette kan være så mangt, men det kan være smart å se på hvilken teknologi du ønsker å bruke, i tillegg til
 både designet av appen og hva den skal gjøre, samt hvordan du skal lagre data i en database.
@@ -223,4 +230,39 @@ for (let melding of meldinger) {
     paragraf.innerHTML = melding.person + ": " + melding.melding;
     utskrift.appendChild(paragraf);
 }
+```
+
+## Steg 5: Skrive data til databasen, fra nettsiden
+
+Vi lager nå en `form` (et skjema) i HTML, som vi bruker for å kunne skrive hvem vi er, og hvilken melding
+vi ønsker å dele.
+
+HTML-koden for skjemaet kan gjøres slik:
+
+```html
+<form id="skjema">
+    <label for="navn">Navn:</label>
+    <input type="text" id="navn" required>
+
+    <label for="melding">Melding:</label>
+    <input type="text" id="melding" required>
+    
+    <button type="submit">Send melding</button>
+</form>
+```
+
+I tillegg så kan/bør du nå stilsette dette, slik du kan se i den fulle koden. Forslag, forsøk å plasser input til venstre på skjermen, og fremvisning av meldingene til høyre.
+
+Vi legger til Javascript-kode som håndterer å hente data fra skjemaet, i tillegg til en oppdatering av app.js - med en rute som lar oss legge data fra skjemaet inn i databasen.
+
+Javascript-kode i index.html:
+
+```js
+// Kommer
+```
+
+Legger til rute i `app.js`, som vi bruker i JS-koden over:
+
+```js
+// Kommer
 ```
