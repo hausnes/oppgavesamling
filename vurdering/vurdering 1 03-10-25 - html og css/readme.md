@@ -6,6 +6,8 @@
 
 Dette er en prøve i webutvikling, der fokuset er på frontend. Du skal gjenskape et design som du får både skjermbilder og video av, ved å bruke teknikkene vi har jobbet med den siste perioden. Dette betyr at du blant annet må bruke semantisk HTML, CSS Grid og/eller Flexbox for å designe nettsiden, ha orden og struktur i både filsystemet og koden din.
 
+NB: Du kan gjerne bruke plassholder-tekst (lorem ipsum), og du kan bruke det samme bildet for alle "postene" - for å spare tid.
+
 Detaljer om designet du skal gjenskape vha. HTML og CSS:
 
 - Nettstedet skal inneholde en forside og en underside. Du skal med andre ord skrive kode for 2 stk. HTML-dokument.
