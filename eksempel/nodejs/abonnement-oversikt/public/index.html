@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Abonnement-oversikt</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.19/300.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.19/400.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.19/600.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="icon" href="data:," />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="Hold oversikt over abonnementene dine og se hvor pengene går." />
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">Abonnement<span>Oversikt</span></div>
+        <nav id="nav-auth" class="nav-auth hidden">
+            <span id="nav-username"></span>
+            <button id="btn-logout" class="btn btn-ghost">Logg ut</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="auth-section" class="card">
+            <h2>Logg inn</h2>
+            <form id="login-form" class="grid">
+                <label>
+                    E-post
+                    <input type="email" name="email" required placeholder="navn@domene.no" />
+                </label>
+                <label>
+                    Passord
+                    <input type="password" name="password" required />
+                </label>
+                <button class="btn" type="submit">Logg inn</button>
+            </form>
+            <div class="muted">Har du ikke konto ennå? Registrer deg under.</div>
+            <h3>Registrer ny bruker</h3>
+            <form id="register-form" class="grid">
+                <label>
+                    Navn
+                    <input type="text" name="name" placeholder="Ola Nordmann" />
+                </label>
+                <label>
+                    E-post
+                    <input type="email" name="email" required />
+                </label>
+                <label>
+                    Passord
+                    <input type="password" name="password" required />
+                </label>
+                <button class="btn" type="submit">Registrer</button>
+            </form>
+            <div id="auth-error" class="error"></div>
+        </section>
+
+        <section id="app-section" class="hidden">
+            <div class="grid two">
+                <section class="card">
+                    <div class="card-header">
+                        <h2>Dine abonnement</h2>
+                        <button id="btn-new" class="btn">Nytt abonnement</button>
+                    </div>
+                    <div id="list-empty" class="muted hidden">Ingen abonnement enda. Legg til ditt første!</div>
+                    <ul id="subs-list" class="list"></ul>
+                </section>
+                <section class="card">
+                    <h2>Statistikk</h2>
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-label">Totalt pr. måned</div>
+                            <div id="stat-total" class="stat-value">0,-</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Antall aktive</div>
+                            <div id="stat-count" class="stat-value">0</div>
+                        </div>
+                    </div>
+                    <canvas id="catChart" height="200"></canvas>
+                </section>
+            </div>
+
+            <dialog id="sub-dialog">
+                <form method="dialog" id="sub-form" class="grid">
+                    <h3 id="dialog-title">Nytt abonnement</h3>
+                    <input type="hidden" name="id" />
+                    <label>
+                        Navn
+                        <input type="text" name="name" required placeholder="Netflix" />
+                    </label>
+                    <label class="full">
+                        Beskrivelse
+                        <textarea name="description" rows="2" placeholder="Premium plan, 4K …"></textarea>
+                    </label>
+                    <label>
+                        Lenke
+                        <input type="url" name="url" placeholder="https://…" />
+                    </label>
+                    <label>
+                        Pris pr. mnd (NOK)
+                        <input type="number" name="price" required step="0.01" min="0" placeholder="139" />
+                    </label>
+                    <label>
+                        Kategori
+                        <input type="text" name="category" placeholder="Underholdning" />
+                    </label>
+                    <label>
+                        Faktureringssyklus
+                        <select name="billing_cycle">
+                            <option value="monthly" selected>Månedlig</option>
+                            <option value="yearly">Årlig</option>
+                        </select>
+                    </label>
+                    <label>
+                        Startdato
+                        <input type="date" name="start_date" />
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" name="is_active" checked /> Aktivt
+                    </label>
+                    <menu class="dialog-actions">
+                        <button class="btn btn-ghost" type="button" value="cancel">Avbryt</button>
+                        <button class="btn" type="submit" value="default" id="btn-save">Lagre</button>
+                    </menu>
+                    <div id="form-error" class="error"></div>
+                </form>
+            </dialog>
+        </section>
+    </main>
+
+    <footer class="footer muted">Laget med ❤️ for oversikt</footer>
+</body>
+</html>
