@@ -299,6 +299,9 @@ Javascript-kode i `index.html` for å sende data fra skjemaet til serveren er de
 Legg spesielt merke til at vi bruker bruker `await fetch` for å sende data til serveren, og at vi sender data som JSON.
 
 ```js
+// Lyttefunksjon på at skjema blir fylt ut
+skjema.addEventListener('submit', sendMelding);
+
 async function sendMelding(e) {
     // SPA - single page application = forhindre full sideoppdatering
     e.preventDefault();
@@ -321,7 +324,8 @@ async function sendMelding(e) {
 
 ### Sjekkpunkt!
 Nå kontrollerer du om chatteappen fungerer ved å gå til nettleseren din og besøke følgende adresse:
-- http://localhost:3000 - med forventet resultat der du kan skrive inn navn og melding, og se at dette blir lagret i databasen og vist på nettsiden.
+- http://localhost:3000 
+    - forventet resultat der du kan skrive inn navn og melding, og se at dette blir lagret i databasen og vist på nettsiden.
 
 ## Løsningsforslag
 
