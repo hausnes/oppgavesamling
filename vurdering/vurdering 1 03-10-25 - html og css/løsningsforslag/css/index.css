@@ -1,0 +1,84 @@
+/* Nullstiller margin og padding for alle elementer */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Setter opp body til å bruke hele høyden på viewporten og gjør den til en fleksboks */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*  
+    Setter opp main-innholdet til å ta opp tilgjengelig plass, 
+    det vil si at det vokser for å fylle tilgjengelig plass i fleksboksen.
+    Dette gjør at footeren alltid vil være nederst på siden, selv om innholdet er lite.
+*/
+main {
+    flex: 1;
+    padding: 2rem;
+}
+
+/* 
+    Navigasjonsmeny 
+*/
+
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: #565656;
+}
+
+/* 
+    Header
+*/
+
+header {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+}
+
+/* 
+    Framvisning av teikneserieframsidene 
+*/
+
+.comic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.comic-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* 
+    Footer 
+*/
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
