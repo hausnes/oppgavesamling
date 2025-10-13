@@ -115,6 +115,10 @@ figure figcaption {
     Tablet: 2 kolonner, siste seksjon span’er hele bredden under
     Mobil: 1 kolonne (stabler)
 */
+main section.about { grid-area: about; }
+main section.author { grid-area: author; }
+main section.artist { grid-area: artist; }
+
 main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -131,11 +135,9 @@ main section {
 
 main h2 { margin-top: 0; }
 
-main section:nth-of-type(1) { grid-area: about; }
-main section:nth-of-type(2) { grid-area: author; }
-main section:nth-of-type(3) { grid-area: artist; }
-
-/* Responsiv oppførsel */
+/* 
+    Responsiv oppførsel, for skjerm i størrelse 900px og mindre
+*/
 @media (max-width: 900px) {
     body {
         grid-template-columns: 1fr;
@@ -155,6 +157,9 @@ main section:nth-of-type(3) { grid-area: artist; }
     }
 }
 
+/* 
+    Responsive oppførsel, for skjerm i størrelse 700px og mindre 
+*/
 @media (max-width: 700px) {
     main {
         grid-template-columns: 1fr;
