@@ -6,7 +6,7 @@ const app = express();
 const Database = require('better-sqlite3');
 const db = new Database('chat.db');
 
-// Opprett tabell om den ikke finnes fra før
+// Opprett database om den ikke finnes fra før
 db.prepare(`
     CREATE TABLE IF NOT EXISTS melding (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
