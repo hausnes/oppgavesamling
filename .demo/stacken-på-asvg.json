@@ -1,0 +1,39 @@
+{
+  "$schema": "https://demotime.show/demo-time.schema.json",
+  "title": "Vis meg stacken din!",
+  "description": "Stacken på ASVG.",
+  "version": 2,
+  "demos": [
+    {
+      "title": "Stacken på ASVG",
+      "description": "Velkommen, og hvilken stack benytter vi.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/01.md",
+          "slide": 1
+        }
+      ]
+    },
+    {
+      "title": "Vis chatteapp",
+      "description": "Viser et eksempel på en enkel app.",
+      "steps": [
+        {
+          "action": "open",
+          "path": "eksempel/nodejs/chat-klasserom/app.js"
+        }
+      ]
+    },
+    {
+      "title": "Avslutning",
+      "description": "Avslutning.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/02.md"
+        }
+      ]
+    }
+  ]
+}
