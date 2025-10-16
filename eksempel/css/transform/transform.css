@@ -12,14 +12,30 @@ body {
     align-items: center;
 }
 
+/* Stil for boksen, og hover-effekten */
+
 main {
     padding: 1rem;
     border: 1px solid red; 
     background-color: white;
+    transition: transform 0.3s ease, background-color 2.3s ease;
 }
 
 main:hover {
     transform: scale(2);
     background-color: pink;
-    transition: transform 0.3s ease, background-color 2.3s ease;
+}
+
+/* Stil for SVG-ikonet, og hover-effekten */
+
+svg {
+    width: 50px;
+    height: 50px;
+    fill: black;
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+svg:hover {
+    transform: rotate(180deg) scale(1.5);
+    fill: red;
 }
